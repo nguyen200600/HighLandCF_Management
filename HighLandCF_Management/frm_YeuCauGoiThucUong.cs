@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using DTO_Highland;
 using BUS_Highland;
+using HighLandCF_Management.Constants;
 
 namespace HighLandCF_Management
 {
@@ -192,6 +193,12 @@ namespace HighLandCF_Management
                 lstBillNoPayment.Items.Add(listitem);
                 i++;
             }
+        }
+        private void LoadProductSize()
+        {
+            var list = ProductSizes.List();
+            cbxProductSizes.DataSource = list;
+            cbxProductSizes.DisplayMember = "Name";
         }
     }
 }
