@@ -579,12 +579,12 @@ namespace HighLandCF_Management
 
                         if (isAddSalary && EmployeeHistoryBUS.Add(emp))
                         {
-                            BtnLamMoiNhanVien_Click(sender, e);
+                            btnLamMoiNhanVien_Click(sender, e);
                             MessageBox.Show("Tính lương thành công.");
                         }
                         else if (!isAddSalary && EmployeeHistoryBUS.Update(emp))
                         {
-                            BtnLamMoiNhanVien_Click(sender, e);
+                            btnLamMoiNhanVien_Click(sender, e);
                             MessageBox.Show("Cập nhật lương thành công.");
                         }
                         else
