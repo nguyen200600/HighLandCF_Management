@@ -70,9 +70,9 @@ namespace HighLandCF_Management
             this.flbTable = new System.Windows.Forms.FlowLayoutPanel();
             this.btnCreateBill = new System.Windows.Forms.Button();
             this.btnCancelBill = new System.Windows.Forms.Button();
+            this.btnTachBan = new System.Windows.Forms.Button();
             this.btnLamMoi = new System.Windows.Forms.Button();
             this.btnThoat = new System.Windows.Forms.Button();
-            this.btnTachBan = new System.Windows.Forms.Button();
             this.groupBox2.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -108,7 +108,7 @@ namespace HighLandCF_Management
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.groupBox2.Location = new System.Drawing.Point(3, 38);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(460, 717);
+            this.groupBox2.Size = new System.Drawing.Size(460, 857);
             this.groupBox2.TabIndex = 17;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Thông tin sản phẩm";
@@ -181,7 +181,7 @@ namespace HighLandCF_Management
             this.panel1.Controls.Add(this.lstProduct);
             this.panel1.Location = new System.Drawing.Point(6, 99);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(448, 611);
+            this.panel1.Size = new System.Drawing.Size(448, 751);
             this.panel1.TabIndex = 6;
             // 
             // lstProduct
@@ -199,10 +199,11 @@ namespace HighLandCF_Management
             this.lstProduct.HideSelection = false;
             this.lstProduct.Location = new System.Drawing.Point(4, 3);
             this.lstProduct.Name = "lstProduct";
-            this.lstProduct.Size = new System.Drawing.Size(444, 605);
+            this.lstProduct.Size = new System.Drawing.Size(444, 745);
             this.lstProduct.TabIndex = 1;
             this.lstProduct.UseCompatibleStateImageBehavior = false;
             this.lstProduct.View = System.Windows.Forms.View.Details;
+            this.lstProduct.SelectedIndexChanged += new System.EventHandler(this.lstProduct_SelectedIndexChanged);
             // 
             // columnHeader6
             // 
@@ -256,6 +257,7 @@ namespace HighLandCF_Management
             this.btnTamTinh.TabIndex = 15;
             this.btnTamTinh.Text = "Tạm Tính";
             this.btnTamTinh.UseVisualStyleBackColor = true;
+            this.btnTamTinh.Click += new System.EventHandler(this.btnTamTinh_Click);
             // 
             // lblNgayHienTai
             // 
@@ -333,6 +335,7 @@ namespace HighLandCF_Management
             this.btnThanhToan.TabIndex = 4;
             this.btnThanhToan.Text = "Thanh toán";
             this.btnThanhToan.UseVisualStyleBackColor = true;
+            this.btnThanhToan.Click += new System.EventHandler(this.btnThanhToan_Click);
             // 
             // groupBox3
             // 
@@ -342,7 +345,7 @@ namespace HighLandCF_Management
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.groupBox3.Location = new System.Drawing.Point(464, 167);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(478, 587);
+            this.groupBox3.Size = new System.Drawing.Size(478, 727);
             this.groupBox3.TabIndex = 19;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Danh mục order sản phẩm";
@@ -354,7 +357,7 @@ namespace HighLandCF_Management
             this.panel2.Controls.Add(this.lstProductCart);
             this.panel2.Location = new System.Drawing.Point(5, 26);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(468, 555);
+            this.panel2.Size = new System.Drawing.Size(468, 695);
             this.panel2.TabIndex = 2;
             // 
             // lstProductCart
@@ -374,10 +377,11 @@ namespace HighLandCF_Management
             this.lstProductCart.HideSelection = false;
             this.lstProductCart.Location = new System.Drawing.Point(0, 3);
             this.lstProductCart.Name = "lstProductCart";
-            this.lstProductCart.Size = new System.Drawing.Size(464, 549);
+            this.lstProductCart.Size = new System.Drawing.Size(464, 689);
             this.lstProductCart.TabIndex = 0;
             this.lstProductCart.UseCompatibleStateImageBehavior = false;
             this.lstProductCart.View = System.Windows.Forms.View.Details;
+            this.lstProductCart.MouseClick += new System.Windows.Forms.MouseEventHandler(this.lstProductCart_MouseClick);
             // 
             // columnHeader5
             // 
@@ -421,10 +425,11 @@ namespace HighLandCF_Management
             this.lstBillNoPayment.HideSelection = false;
             this.lstBillNoPayment.Location = new System.Drawing.Point(938, 193);
             this.lstBillNoPayment.Name = "lstBillNoPayment";
-            this.lstBillNoPayment.Size = new System.Drawing.Size(185, 556);
+            this.lstBillNoPayment.Size = new System.Drawing.Size(185, 696);
             this.lstBillNoPayment.TabIndex = 20;
             this.lstBillNoPayment.UseCompatibleStateImageBehavior = false;
             this.lstBillNoPayment.View = System.Windows.Forms.View.Details;
+            this.lstBillNoPayment.SelectedIndexChanged += new System.EventHandler(this.lstBillNoPayment_SelectedIndexChanged);
             // 
             // columnHeader16
             // 
@@ -444,7 +449,7 @@ namespace HighLandCF_Management
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.groupBox1.Location = new System.Drawing.Point(1127, 38);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(485, 717);
+            this.groupBox1.Size = new System.Drawing.Size(485, 857);
             this.groupBox1.TabIndex = 21;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Chức năng";
@@ -462,7 +467,7 @@ namespace HighLandCF_Management
             this.flbTable.Controls.Add(this.btnThoat);
             this.flbTable.Location = new System.Drawing.Point(6, 24);
             this.flbTable.Name = "flbTable";
-            this.flbTable.Size = new System.Drawing.Size(225, 693);
+            this.flbTable.Size = new System.Drawing.Size(225, 833);
             this.flbTable.TabIndex = 5;
             // 
             // btnCreateBill
@@ -491,6 +496,17 @@ namespace HighLandCF_Management
             this.btnCancelBill.UseVisualStyleBackColor = true;
             this.btnCancelBill.Click += new System.EventHandler(this.btnCancelBill_Click);
             // 
+            // btnTachBan
+            // 
+            this.btnTachBan.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnTachBan.Location = new System.Drawing.Point(3, 81);
+            this.btnTachBan.Name = "btnTachBan";
+            this.btnTachBan.Size = new System.Drawing.Size(123, 33);
+            this.btnTachBan.TabIndex = 9;
+            this.btnTachBan.Text = "Chuyển - Đổi";
+            this.btnTachBan.UseVisualStyleBackColor = true;
+            this.btnTachBan.Visible = false;
+            // 
             // btnLamMoi
             // 
             this.btnLamMoi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
@@ -515,29 +531,18 @@ namespace HighLandCF_Management
             this.btnThoat.UseVisualStyleBackColor = true;
             this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
-            // btnTachBan
-            // 
-            this.btnTachBan.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnTachBan.Location = new System.Drawing.Point(3, 81);
-            this.btnTachBan.Name = "btnTachBan";
-            this.btnTachBan.Size = new System.Drawing.Size(123, 33);
-            this.btnTachBan.TabIndex = 9;
-            this.btnTachBan.Text = "Chuyển - Đổi";
-            this.btnTachBan.UseVisualStyleBackColor = true;
-            this.btnTachBan.Visible = false;
-            // 
             // frm_YeuCauGoiThucUong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1370, 609);
+            this.ClientSize = new System.Drawing.Size(1370, 749);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.lstBillNoPayment);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.panelTemplate);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.label23);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frm_YeuCauGoiThucUong";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frm_YeuCauGoiThucUong";
