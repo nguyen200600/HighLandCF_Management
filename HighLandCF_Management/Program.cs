@@ -6,6 +6,7 @@ using System.Windows.Forms;
 using DTO_Highland;
 //Nguyên
 //1234567
+//dinh thanh luan
 namespace HighLandCF_Management
 {
     internal static class Program
