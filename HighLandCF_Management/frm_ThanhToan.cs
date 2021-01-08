@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using BUS_Highland;
 
+
 namespace HighLandCF_Management
 {
     public partial class frm_ThanhToan : Form
@@ -17,7 +18,7 @@ namespace HighLandCF_Management
         private readonly int _maHD;
         private readonly string _tenHD;
         private readonly string _tongTien;
-        public frm_ThanhToan()
+        public frm_ThanhToan(string TenHD, int MaHD, string TongTien)
         {
             InitializeComponent();
             _tenHD = TenHD;
@@ -66,6 +67,7 @@ namespace HighLandCF_Management
             }
             else MessageBox.Show("Nhập tiền khách cần thanh toán cho hóa đơn này!");
         }
+
 
         private void txtHuy_Click(object sender, EventArgs e) => Close();
 
@@ -119,6 +121,20 @@ namespace HighLandCF_Management
         private void txtTongTien_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            lblThoiGian.Text = DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss");
+        }
+
+        private void txtSTK_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((Convert.ToInt32(e.KeyChar) >= 48 && Convert.ToInt32(e.KeyChar) <= 57) || Convert.ToInt32(e.KeyChar) == 8)
+            {
+                e.Handled = false;
+            }
+            else e.Handled = true;
         }
     }
 }

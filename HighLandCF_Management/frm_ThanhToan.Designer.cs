@@ -83,6 +83,10 @@ namespace HighLandCF_Management
             this.label11.TabIndex = 38;
             this.label11.Text = "(vnđ)";
             // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // label9
             // 
             this.label9.AllowDrop = true;
@@ -133,7 +137,6 @@ namespace HighLandCF_Management
             this.lblThoiGian.TabIndex = 36;
             this.lblThoiGian.Text = "Thời gian";
             this.lblThoiGian.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-   
             // 
             // txtHuy
             // 
@@ -172,7 +175,6 @@ namespace HighLandCF_Management
             this.txtThanhTien.TabIndex = 26;
             this.txtThanhTien.Text = "0";
             this.txtThanhTien.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-
             // 
             // txtTongTien
             // 
@@ -199,7 +201,6 @@ namespace HighLandCF_Management
             this.txtPromotion.TabIndex = 25;
             this.txtPromotion.Text = "0";
             this.txtPromotion.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-     
             // 
             // txtSTK
             // 
@@ -213,6 +214,7 @@ namespace HighLandCF_Management
             this.txtSTK.Text = "0";
             this.txtSTK.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.txtSTK.TextChanged += new System.EventHandler(this.txtSTK_TextChanged);
+            this.txtSTK.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSTK_KeyPress);
             // 
             // label5
             // 
@@ -333,7 +335,7 @@ namespace HighLandCF_Management
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnXuatHD);
             this.Controls.Add(this.label3);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frm_ThanhToan";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Thanh Toán";
