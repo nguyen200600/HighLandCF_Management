@@ -84,6 +84,7 @@ namespace HighLandCF_Management
             this.txtXacNhap.Size = new System.Drawing.Size(288, 30);
             this.txtXacNhap.TabIndex = 6;
             this.txtXacNhap.UseSystemPasswordChar = true;
+            this.txtXacNhap.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtXacNhap_KeyPress);
             // 
             // lblThongBao
             // 

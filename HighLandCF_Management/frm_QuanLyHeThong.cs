@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using BUS_Highland;
 using DTO_Highland;
+using HighLandCF_Management.Constants;
 //nguyhh
 namespace HighLandCF_Management
 {
@@ -210,7 +211,7 @@ namespace HighLandCF_Management
                     }
                     else
                     {
-                        Frm_XacNhan frm_XN = new Frm_XacNhan("Bạn vui lòng nhập mật khẩu để xác nhận thao tác này!");
+                        frm_XacNhan frm_XN = new frm_XacNhan("Bạn vui lòng nhập mật khẩu để xác nhận thao tác này!");
                         if (frm_XN.ShowDialog() == DialogResult.OK)
                         {
                             if (AccountBUS.IsLogin(Program.sAccount.ID, frm_XN.txtXacNhap.Text))
@@ -256,7 +257,7 @@ namespace HighLandCF_Management
                 {
                     ListViewItem lvw = lstProduct.SelectedItems[0];
                     ProductDTO sp = (ProductDTO)lvw.Tag;
-                    Frm_XacNhan frm_XN = new Frm_XacNhan("Xóa một sản phẩm rất quan trọng. Bạn vui lòng nhập mật khẩu để xác nhận thao tác này!");
+                    frm_XacNhan frm_XN = new frm_XacNhan("Xóa một sản phẩm rất quan trọng. Bạn vui lòng nhập mật khẩu để xác nhận thao tác này!");
                     if (frm_XN.ShowDialog() == DialogResult.OK)
                     {
                         if (AccountBUS.IsLogin(Program.sAccount.ID, frm_XN.txtXacNhap.Text))
@@ -303,7 +304,7 @@ namespace HighLandCF_Management
                 if (lstTypeProduct.SelectedItems.Count > 0)
                 {
                     TypeProductDTO sp = lstTypeProduct.SelectedItems[0].Tag as TypeProductDTO;
-                    Frm_XacNhan frm_XN = new Frm_XacNhan("Vui lòng nhập mật khẩu để xác nhận thao tác này!");
+                    frm_XacNhan frm_XN = new frm_XacNhan("Vui lòng nhập mật khẩu để xác nhận thao tác này!");
                     if (frm_XN.ShowDialog() == DialogResult.OK)
                     {
                         if (AccountBUS.IsLogin(Program.sAccount.ID, frm_XN.txtXacNhap.Text))
@@ -662,7 +663,7 @@ namespace HighLandCF_Management
                 if (lstAccount.SelectedItems.Count > 0)
                 {
                     AccountDTO acc = lstAccount.SelectedItems[0].Tag as AccountDTO;
-                    Frm_XacNhan frm_XN = new Frm_XacNhan("Bạn vui lòng nhập mật khẩu để xác nhận thao tác này!");
+                    frm_XacNhan frm_XN = new frm_XacNhan("Bạn vui lòng nhập mật khẩu để xác nhận thao tác này!");
                     if (frm_XN.ShowDialog() == DialogResult.OK)
                     {
                         if (AccountBUS.IsLogin(Program.sAccount.ID, frm_XN.txtXacNhap.Text))
@@ -744,7 +745,7 @@ namespace HighLandCF_Management
             if (lstNguyenLieu.SelectedItems.Count > 0)
             {
                 var invent = (lstNguyenLieu.SelectedItems[0].Tag as InventoryDTO);
-                Frm_XacNhan frm_XN = new Frm_XacNhan("Bạn vui lòng nhập mật khẩu để xác nhận thao tác này!");
+                frm_XacNhan frm_XN = new frm_XacNhan("Bạn vui lòng nhập mật khẩu để xác nhận thao tác này!");
                 if (frm_XN.ShowDialog() == DialogResult.OK)
                 {
                     if (InventoryBUS.Delete(invent.ID))
