@@ -22,7 +22,7 @@ namespace HighLandCF_Management
             InitializeComponent();
             LoadTypeProduct();
             LoadListBillNoPayment();
-            tssNhanVien.Text = "Nhân viên đang đăng nhập: " + Program.sAccount.Name;
+            statusStrip1.Text = "Nhân viên đang đăng nhập: " + Program.sAccount.Name;
         }
         public void LoadListOrder(int billId)
         {
@@ -350,6 +350,13 @@ namespace HighLandCF_Management
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void timer1_Tick(object sender, EventArgs e) => lblNgayHienTai.Text = DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss");
+
+        private void statusStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
         }
     }
 }
