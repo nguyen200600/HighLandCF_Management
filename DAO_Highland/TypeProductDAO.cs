@@ -11,7 +11,7 @@ namespace DAO_Highland
     {
         public static bool DeleteTypeProduct(TypeProductDTO tydr)
         {
-            string query = "Exec USP_DeleteTypeProduct @id";
+            string query = "Exec DeleteTypeProduct @id";
             if (DataProvider.Instance.ExcuteNonQuery(query, new object[] { tydr.ID }) == 1)
             {
                 return true;
@@ -35,7 +35,7 @@ namespace DAO_Highland
         public static List<TypeProductDTO> GetListTypeProductWithStatusOne(int status)
         {
             List<TypeProductDTO> listtype = new List<TypeProductDTO>();// 0 ẩn , 1 hiện
-            string query = "select * from TYPEProduct where Status = " + status;
+            string query = "select * from TYPEPRODUCT where Status = " + status;
             DataTable data = DataProvider.Instance.ExcuteQuery(query);
             foreach (DataRow item in data.Rows)
             {
@@ -47,7 +47,7 @@ namespace DAO_Highland
 
         public static bool InsertTypeProduct(TypeProductDTO tydr)
         {
-            string query = "Exec USP_InsertTypeProduct @nametype , @status ";
+            string query = "Exec InsertTypeProduct @nametype , @status ";
             if (DataProvider.Instance.ExcuteNonQuery(query, new object[] { tydr.NameType, tydr.Status }) == 1)
             {
                 return true;
@@ -57,7 +57,7 @@ namespace DAO_Highland
 
         public static bool UpdateTypeProduct(TypeProductDTO tydr)
         {
-            string query = "Exec USP_UpdateTypeProduct @id , @nametype , @status ";
+            string query = "Exec UpdateTypeProduct @id , @nametype , @status ";
             if (DataProvider.Instance.ExcuteNonQuery(query, new object[] { tydr.ID, tydr.NameType, tydr.Status }) == 1)
             {
                 return true;

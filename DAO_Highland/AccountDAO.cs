@@ -91,7 +91,7 @@ namespace DAO_Highland
 
         public static bool ResetAccount(int user)
         {
-            var query = String.Format("UPDATE DBO.ACCOUNT SET PASS = {0} WHERE ID = @username ", PASSWORD_DEFAULT);
+            var query = String.Format("UPDATE ACCOUNT SET PASS = {0} WHERE ID = @username ", PASSWORD_DEFAULT);
             if (DataProvider.Instance.ExcuteNonQuery(query, new object[] { user }) == 1)
             {
                 return true;

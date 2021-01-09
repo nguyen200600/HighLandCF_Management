@@ -11,7 +11,7 @@ namespace DAO_Highland
     {
         public static bool Add(EmployeeHistoryDTO ac)
         {
-            string query = "EXEC [USP_INSERTEMPLOYHISTORY] @ACCOUNTID , @MONTH , @YEAR , @SALARYBYCA , @CA ";
+            string query = "EXEC INSERTEMPLOYHISTORY @ACCOUNTID , @MONTH , @YEAR , @SALARYBYCA , @CA ";
             if (DataProvider.Instance.ExcuteNonQuery(query, new object[] { ac.AccountID, ac.Month, ac.Year, ac.SalaryByCa, ac.Ca }) == 1)
             {
                 return true;
@@ -42,7 +42,7 @@ namespace DAO_Highland
 
         public static bool Update(EmployeeHistoryDTO ac)
         {
-            string query = "EXEC [USP_UPDATEEMPLOYHISTORY] @ACCOUNTID , @MONTH , @YEAR , @SALARYBYCA , @CA  ";
+            string query = "EXEC UPDATEEMPLOYHISTORY @ACCOUNTID , @MONTH , @YEAR , @SALARYBYCA , @CA  ";
             if (DataProvider.Instance.ExcuteNonQuery(query, new object[] { ac.AccountID, ac.Month, ac.Year, ac.SalaryByCa, ac.Ca }) == 1)
             {
                 return true;

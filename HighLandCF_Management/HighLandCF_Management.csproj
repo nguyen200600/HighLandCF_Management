@@ -33,6 +33,24 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1427.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1427.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1427.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1427.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1427.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -103,6 +121,25 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="rpt_ThanhToan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rpt_ThanhToan.Designer.cs">
+      <DependentUpon>rpt_ThanhToan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rpt_ThongKe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rpt_ThongKe.Designer.cs">
+      <DependentUpon>rpt_ThongKe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rpt_ThongKeDoanhThu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rpt_ThongKeDoanhThu.Designer.cs">
+      <DependentUpon>rpt_ThongKeDoanhThu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SqlServerTypes\Loader.cs" />
     <EmbeddedResource Include="frm_DangNhap.resx">
       <DependentUpon>frm_DangNhap.cs</DependentUpon>
     </EmbeddedResource>
@@ -139,6 +176,30 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="rpt_ThanhToan.rdlc" />
+    <EmbeddedResource Include="rpt_ThanhToan.resx">
+      <DependentUpon>rpt_ThanhToan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_ThongKe.rdlc" />
+    <EmbeddedResource Include="rpt_ThongKe.resx">
+      <DependentUpon>rpt_ThongKe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_ThongKeDoanhThu.rdlc" />
+    <EmbeddedResource Include="rpt_ThongKeDoanhThu.resx">
+      <DependentUpon>rpt_ThongKeDoanhThu.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\DTO_Highland.AccountDetailDTO.datasource" />
+    <None Include="Properties\DataSources\DTO_Highland.AccountDTO.datasource" />
+    <None Include="Properties\DataSources\DTO_Highland.BillDTO.datasource" />
+    <None Include="Properties\DataSources\DTO_Highland.BillUpDTO.datasource" />
+    <None Include="Properties\DataSources\DTO_Highland.DetailBillDTO.datasource" />
+    <None Include="Properties\DataSources\DTO_Highland.EmployeeHistoryDTO.datasource" />
+    <None Include="Properties\DataSources\DTO_Highland.InventoryDTO.datasource" />
+    <None Include="Properties\DataSources\DTO_Highland.MenuDTO.datasource" />
+    <None Include="Properties\DataSources\DTO_Highland.ProductDTO.datasource" />
+    <None Include="Properties\DataSources\DTO_Highland.RevenueDTO.datasource" />
+    <None Include="Properties\DataSources\DTO_Highland.TypeProductDTO.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -162,6 +223,20 @@
       <Name>DTO_Highland</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

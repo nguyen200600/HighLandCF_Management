@@ -11,7 +11,7 @@ namespace DAO_Highland
     {
         public static bool DeleteProduct(ProductDTO sp)
         {
-            string query = "Exec USP_DeleteByProduct @id ";
+            string query = "Exec DeleteByProduct @id ";
             if (DataProvider.Instance.ExcuteNonQuery(query, new object[] { sp.ID }) == -1)
             {
                 return false;
@@ -22,7 +22,7 @@ namespace DAO_Highland
         public static List<ProductDTO> GeProductByName(string name)
         {
             List<ProductDTO> listProduct = new List<ProductDTO>();
-            string query = string.Format("SELECT * FROM DBO.PRODUCT WHERE DBO.FCHUYENCODAUTHANHKHONGDAU(NAMEPRODUCTS) LIKE N'%' + DBO.FCHUYENCODAUTHANHKHONGDAU(N'{0}') + '%' AND PRODUCT.IDTYPEDINK NOT IN (SELECT ID FROM TYPEPRODUCT WHERE STATUS = 0)", name);
+            string query = string.Format("SELECT * FROM PRODUCT WHERE FCHUYENCODAUTHANHKHONGDAU(NAMEPRODUCTS) LIKE N'%' + FCHUYENCODAUTHANHKHONGDAU(N'{0}') + '%' AND PRODUCT.IDTYPEDINK NOT IN (SELECT ID FROM TYPEPRODUCT WHERE STATUS = 0)", name);
             DataTable data = DataProvider.Instance.ExcuteQuery(query);
             foreach (DataRow item in data.Rows)
             {
@@ -47,7 +47,7 @@ namespace DAO_Highland
 
         public static int GetIDTypeProductByIDProduct(int id)
         {
-            DataTable data = DataProvider.Instance.ExcuteQuery("SELECT D.IDTYPEDINK FROM DBO.PRODUCT AS D WHERE IDTYPEDINK = " + id);//chưa thanh toán
+            DataTable data = DataProvider.Instance.ExcuteQuery("SELECT D.IDTYPEDINK FROM PRODUCT AS D WHERE IDTYPEDINK = " + id);//chưa thanh toán
             if (data.Rows.Count > 0)
             {
                 return Convert.ToInt32(data.Rows[0]["IDTypeDink"].ToString());
@@ -84,7 +84,7 @@ namespace DAO_Highland
 
         public static bool InsertProduct(ProductDTO sp)
         {
-            string query = "Exec USP_InsertProduct @name , @pricebasic , @saleprice , @status , @idtype , @size ";
+            string query = "Exec InsertProduct @name , @pricebasic , @saleprice , @status , @idtype , @size ";
             if (DataProvider.Instance.ExcuteNonQuery(query, new object[] { sp.NameProducts, sp.PriceBasic, sp.SalePrice, sp.Status, sp.IDTypeProduct, sp.Size }) == 1)
             {
                 return true;
@@ -94,7 +94,7 @@ namespace DAO_Highland
 
         public static bool UpdateProduct(ProductDTO sp)
         {
-            string query = "Exec USP_UpdateProduct @id , @name , @pricebasic , @saleprice , @status , @idtype , @size ";
+            string query = "Exec UpdateProduct @id , @name , @pricebasic , @saleprice , @status , @idtype , @size ";
             if (DataProvider.Instance.ExcuteNonQuery(query, new object[] { sp.ID, sp.NameProducts, sp.PriceBasic, sp.SalePrice, sp.Status, sp.IDTypeProduct, sp.Size }) == 1)
             {
                 return true;

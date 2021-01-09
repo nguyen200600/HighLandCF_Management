@@ -9,12 +9,12 @@ namespace DAO_Highland
 {
     public class BillDAO
     {
-        public static void DeleteBill(int idbill) => DataProvider.Instance.ExcuteNonQuery("Exec USP_DELETEBILL @idbill ", new object[] { idbill });
+        public static void DeleteBill(int idbill) => DataProvider.Instance.ExcuteNonQuery("Exec DELETEBILL @idbill ", new object[] { idbill });
 
         public static List<int> GetAllBillNoPament()
         {
             var lstBill = new List<int>();
-            var data = DataProvider.Instance.ExcuteQuery("SELECT ID FROM DBO.BILL WHERE STATUS = 0 ");
+            var data = DataProvider.Instance.ExcuteQuery("SELECT ID FROM BILL WHERE STATUS = 0 ");
             foreach (DataRow item in data.Rows)
             {
                 if (Int32.TryParse(item["ID"].ToString(), out int value))
@@ -27,7 +27,7 @@ namespace DAO_Highland
 
         public static int GetIDBillNoPayment()
         {
-            var data = DataProvider.Instance.ExcuteQuery("SELECT TOP 1 * FROM DBO.BILL WHERE AND STATUS = 0");
+            var data = DataProvider.Instance.ExcuteQuery("SELECT TOP 1 * FROM BILL WHERE AND STATUS = 0");
             if (data.Rows.Count > 0)
             {
                 BillDTO bill = new BillDTO(data.Rows[0]);
@@ -51,7 +51,7 @@ namespace DAO_Highland
 
         public static int InsertBill(DateTime thoiGian, double tongTien, int employ)
         {
-            var query = "Exec USP_InsertBill @thoigian , @tongtien , @employ ";
+            var query = "Exec InsertBill @thoigian , @tongtien , @employ ";
             var re = DataProvider.Instance.ExcuteScalar(query, new object[] { thoiGian, tongTien, employ }).ToString();
             if (re != "")
                 return Convert.ToInt32(re);
@@ -70,7 +70,7 @@ namespace DAO_Highland
 
         public static void UpdatetBill(int id, double totalbill, double promotion, double cusPrice, double outPrice, double revenue, DateTime datetime, int employ)
         {
-            var query = "Exec USP_UpdateBill @IDBILL , @TOTALBILL , @DATETIME , @EMPLOY , @PROMOTIONPRICE , @CUSTOMERPRICE , @OUTPRICE , @REVENUE ";
+            var query = "Exec UpdateBill @IDBILL , @TOTALBILL , @DATETIME , @EMPLOY , @PROMOTIONPRICE , @CUSTOMERPRICE , @OUTPRICE , @REVENUE ";
 
             DataProvider.Instance.ExcuteNonQuery(query, new object[] { id, totalbill, datetime, employ, promotion, cusPrice, outPrice, revenue });
         }

@@ -12,7 +12,7 @@ namespace DAO_Highland
     {
         public static void DeleteOneProduct(int idbill, int idProduct)
         {
-            string query = "EXEC USP_DELETEDETAILBILL @idbill , @idProduct ";
+            string query = "EXEC DELETEDETAILBILL @idbill , @idProduct ";
             DataProvider.Instance.ExcuteNonQuery(query, new object[] { idbill, idProduct });
         }
 
@@ -27,7 +27,7 @@ namespace DAO_Highland
             return 0;
         }
 
-        public static void InsertDetailBill(int idbill, int idProduct, int quantity) => DataProvider.Instance.ExcuteNonQuery("EXEC USP_INSERTBILLINFO @idbill , @idProduct , @quantity ", new object[] { idbill, idProduct, quantity });
+        public static void InsertDetailBill(int idbill, int idProduct, int quantity) => DataProvider.Instance.ExcuteNonQuery("EXEC INSERTBILLINFO @idbill , @idProduct , @quantity ", new object[] { idbill, idProduct, quantity });
 
         public static bool IsEmpty(int idbill)
         {
@@ -52,7 +52,7 @@ namespace DAO_Highland
 
         public static bool IsExistProductByIDBillAndIDProduct(int idbill, int idProduct)
         {
-            var data = DataProvider.Instance.ExcuteQuery("SELECT [IDBILL], [IDProduct], [QUANTITY]  FROM DBO.DETAILBILL AS DE WHERE IDBILL = " + idbill + " and IDProduct = " + idProduct);
+            var data = DataProvider.Instance.ExcuteQuery("SELECT [IDBILL], [IDProduct], [QUANTITY]  FROM DETAILBILL AS DE WHERE IDBILL = " + idbill + " and IDProduct = " + idProduct);
             if (data.Rows.Count > 0)
             {
                 return true;

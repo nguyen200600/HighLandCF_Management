@@ -703,7 +703,7 @@ namespace HighLandCF_Management
 
         private void btnThongKe_Click(object sender, EventArgs e)
         {
-            RptThongKe rptThongKe = new RptThongKe();
+            rpt_ThongKe rptThongKe = new rpt_ThongKe();
             List<BillUpDTO> lstBill = BillBUS.GetListBillInAboutTime(dtpFromDate.Value, dtpToDate.Value);
             if (lstBill.Count > 0)
             {
@@ -723,12 +723,12 @@ namespace HighLandCF_Management
             int toMonth = (cbxToMonth.SelectedItem as DimTime).Month;
             int toYear = (cbxToMonth.SelectedItem as DimTime).Year;
 
-            var rptThongKeDoanhThu = new rptThongKeDoanhThu();
+            var rpt_ThongKeDoanhThu = new rpt_ThongKeDoanhThu();
             var lstRevenue = RevenueBUS.GetRevenueByMonth(fromMonth, fromYear, toMonth, toYear);
             if (lstRevenue.Count > 0)
             {
-                rptThongKeDoanhThu.XuatThongKeTheoThang(lstRevenue, DateTime.Now, String.Format("{0}/{1}", fromMonth, fromYear), String.Format("{0}/{1}", toMonth, toYear), Program.sAccount.Name);
-                rptThongKeDoanhThu.ShowDialog();
+                rpt_ThongKeDoanhThu.XuatThongKeTheoThang(lstRevenue, DateTime.Now, String.Format("{0}/{1}", fromMonth, fromYear), String.Format("{0}/{1}", toMonth, toYear), Program.sAccount.Name);
+                rpt_ThongKeDoanhThu.ShowDialog();
             }
             else
             {
@@ -1258,7 +1258,7 @@ namespace HighLandCF_Management
                     DialogResult kq = MessageBox.Show("Bạn có muốn xem lại hóa đơn HD00" + bill.ID + " này có gì không?", "Thông báo", MessageBoxButtons.OKCancel);
                     if (kq == DialogResult.OK)
                     {
-                        RptThanhToan frm_TToan = new RptThanhToan();
+                        rpt_ThanhToan frm_TToan = new rpt_ThanhToan();
                         frm_TToan.XuatHoaDon(bill.ID, "HÓA ĐƠN ĐÃ THANH TOÁN", bill.ID.ToString(), AccountBUS.GetNameByAccount(bill.Employ), bill.CreateDay, bill.Total.ToString(), bill.PromotionPrice.ToString(), bill.CustomerPrice.ToString(), bill.OutPrice.ToString(), bill.Revenue.ToString(), false);
 
                         frm_TToan.ShowDialog();

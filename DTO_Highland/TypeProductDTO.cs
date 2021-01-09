@@ -18,6 +18,7 @@ namespace DTO_Highland
         {
         }
 
+
         public TypeProductDTO(DataRow row)
         {
             ID = (int)row["ID"];

@@ -13,7 +13,7 @@ namespace DAO_Highland
         {
             List<RevenueDTO> List = new List<RevenueDTO>();
 
-            string query = " EXEC [dbo].[USP_GETREVENUEBYMONTH] @FROMMONTH , @FROMYEAR , @TOMONTH , @TOYEAR ";
+            string query = " EXEC GETREVENUEBYMONTH @FROMMONTH , @FROMYEAR , @TOMONTH , @TOYEAR ";
             DataTable data = DataProvider.Instance.ExcuteQuery(query, new object[] { fromMonth, fromYear, toMonth, toYear });
             foreach (DataRow item in data.Rows)
             {

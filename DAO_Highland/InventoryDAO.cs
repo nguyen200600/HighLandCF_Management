@@ -11,7 +11,7 @@ namespace DAO_Highland
     {
         public static bool Add(InventoryDTO ac)
         {
-            string query = "EXEC [USP_INSERTEINVENTORY] @NAME , @NOTE , @PRICEBASE ";
+            string query = "EXEC INSERTEINVENTORY @NAME , @NOTE , @PRICEBASE ";
             if (DataProvider.Instance.ExcuteNonQuery(query, new object[] { ac.Name, ac.Note, ac.PriceBase }) == 1)
             {
                 return true;
@@ -48,7 +48,7 @@ namespace DAO_Highland
 
         public static bool Update(InventoryDTO ac)
         {
-            string query = "EXEC [USP_UPDATEINVENTORY] @ID , @NAME , @NOTE , @PRICEBASE ";
+            string query = "EXEC UPDATEINVENTORY @ID , @NAME , @NOTE , @PRICEBASE ";
             if (DataProvider.Instance.ExcuteNonQuery(query, new object[] { ac.ID, ac.Name, ac.Note, ac.PriceBase }) == 1)
             {
                 return true;

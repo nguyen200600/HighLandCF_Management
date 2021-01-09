@@ -340,7 +340,7 @@ namespace HighLandCF_Management
 
             try
             {
-                RptThanhToan frm_TToan = new RptThanhToan();
+                rpt_ThanhToan frm_TToan = new rpt_ThanhToan();
                 DateTime Time = DateTime.Now;
                 frm_TToan.XuatHoaDon(currentBillId, "HÓA ĐƠN TẠM TÍNH", currentBillId.ToString(), Program.sAccount.Name, Time, string.Format("{0:0,0}", txttotalPrice.Text), "0", "0", "0", "0", true);
 

@@ -8,7 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using BUS_Highland;
-
+using DTO_Highland;
+using Microsoft.Reporting.WinForms;
 
 namespace HighLandCF_Management
 {
@@ -52,7 +53,7 @@ namespace HighLandCF_Management
                     DialogResult kq = MessageBox.Show("Bạn có muốn thanh toán hay không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                     if (kq != DialogResult.No)
                     {
-                        RptThanhToan rptThanhToan = new RptThanhToan();
+                        rpt_ThanhToan rptThanhToan = new rpt_ThanhToan();
                         DateTime Time = DateTime.Now;
                         rptThanhToan.XuatHoaDon(_maHD, _tenHD, _maHD.ToString(), Program.sAccount.Name, Time, _tongTien, txtPromotion.Text, txtSTK.Text, txtTienTon.Text, thanhtien.ToString(), true);
 
@@ -136,5 +137,6 @@ namespace HighLandCF_Management
             }
             else e.Handled = true;
         }
+        
     }
 }

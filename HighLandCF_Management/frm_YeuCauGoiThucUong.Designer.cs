@@ -111,9 +111,9 @@ namespace HighLandCF_Management
             this.groupBox2.Controls.Add(this.txtTuKhoa);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.groupBox2.Location = new System.Drawing.Point(4, 47);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox2.Size = new System.Drawing.Size(613, 1055);
             this.groupBox2.TabIndex = 17;
             this.groupBox2.TabStop = false;
@@ -125,7 +125,7 @@ namespace HighLandCF_Management
             this.panel4.Controls.Add(this.cbLoaiThucUong);
             this.panel4.Controls.Add(this.label2);
             this.panel4.Location = new System.Drawing.Point(8, 69);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(597, 46);
             this.panel4.TabIndex = 14;
@@ -135,7 +135,7 @@ namespace HighLandCF_Management
             this.cbxProductSizes.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.cbxProductSizes.FormattingEnabled = true;
             this.cbxProductSizes.Location = new System.Drawing.Point(449, 7);
-            this.cbxProductSizes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbxProductSizes.Margin = new System.Windows.Forms.Padding(4);
             this.cbxProductSizes.Name = "cbxProductSizes";
             this.cbxProductSizes.Size = new System.Drawing.Size(140, 33);
             this.cbxProductSizes.TabIndex = 5;
@@ -146,7 +146,7 @@ namespace HighLandCF_Management
             this.cbLoaiThucUong.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.cbLoaiThucUong.FormattingEnabled = true;
             this.cbLoaiThucUong.Location = new System.Drawing.Point(164, 7);
-            this.cbLoaiThucUong.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbLoaiThucUong.Margin = new System.Windows.Forms.Padding(4);
             this.cbLoaiThucUong.Name = "cbLoaiThucUong";
             this.cbLoaiThucUong.Size = new System.Drawing.Size(275, 33);
             this.cbLoaiThucUong.TabIndex = 1;
@@ -178,7 +178,7 @@ namespace HighLandCF_Management
             // btnTimKiem
             // 
             this.btnTimKiem.Location = new System.Drawing.Point(453, 26);
-            this.btnTimKiem.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnTimKiem.Margin = new System.Windows.Forms.Padding(4);
             this.btnTimKiem.Name = "btnTimKiem";
             this.btnTimKiem.Size = new System.Drawing.Size(152, 38);
             this.btnTimKiem.TabIndex = 11;
@@ -192,7 +192,7 @@ namespace HighLandCF_Management
             | System.Windows.Forms.AnchorStyles.Left)));
             this.panel1.Controls.Add(this.lstProduct);
             this.panel1.Location = new System.Drawing.Point(8, 122);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(597, 924);
             this.panel1.TabIndex = 6;
@@ -211,7 +211,7 @@ namespace HighLandCF_Management
             this.lstProduct.GridLines = true;
             this.lstProduct.HideSelection = false;
             this.lstProduct.Location = new System.Drawing.Point(5, 4);
-            this.lstProduct.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lstProduct.Margin = new System.Windows.Forms.Padding(4);
             this.lstProduct.Name = "lstProduct";
             this.lstProduct.Size = new System.Drawing.Size(591, 916);
             this.lstProduct.TabIndex = 1;
@@ -241,7 +241,7 @@ namespace HighLandCF_Management
             // txtTuKhoa
             // 
             this.txtTuKhoa.Location = new System.Drawing.Point(172, 30);
-            this.txtTuKhoa.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTuKhoa.Margin = new System.Windows.Forms.Padding(4);
             this.txtTuKhoa.Name = "txtTuKhoa";
             this.txtTuKhoa.Size = new System.Drawing.Size(275, 26);
             this.txtTuKhoa.TabIndex = 10;
@@ -259,7 +259,7 @@ namespace HighLandCF_Management
             this.panelTemplate.Controls.Add(this.btnThanhToan);
             this.panelTemplate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.panelTemplate.Location = new System.Drawing.Point(619, 47);
-            this.panelTemplate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelTemplate.Margin = new System.Windows.Forms.Padding(4);
             this.panelTemplate.Name = "panelTemplate";
             this.panelTemplate.Size = new System.Drawing.Size(877, 158);
             this.panelTemplate.TabIndex = 18;
@@ -268,7 +268,7 @@ namespace HighLandCF_Management
             // 
             this.btnTamTinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnTamTinh.Location = new System.Drawing.Point(585, 58);
-            this.btnTamTinh.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnTamTinh.Margin = new System.Windows.Forms.Padding(4);
             this.btnTamTinh.Name = "btnTamTinh";
             this.btnTamTinh.Size = new System.Drawing.Size(283, 43);
             this.btnTamTinh.TabIndex = 15;
@@ -310,7 +310,7 @@ namespace HighLandCF_Management
             // 
             this.txttotalPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.txttotalPrice.Location = new System.Drawing.Point(137, 116);
-            this.txttotalPrice.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txttotalPrice.Margin = new System.Windows.Forms.Padding(4);
             this.txttotalPrice.Name = "txttotalPrice";
             this.txttotalPrice.ReadOnly = true;
             this.txttotalPrice.Size = new System.Drawing.Size(345, 32);
@@ -321,7 +321,7 @@ namespace HighLandCF_Management
             // txtHD
             // 
             this.txtHD.Location = new System.Drawing.Point(137, 12);
-            this.txtHD.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtHD.Margin = new System.Windows.Forms.Padding(4);
             this.txtHD.Multiline = true;
             this.txtHD.Name = "txtHD";
             this.txtHD.ReadOnly = true;
@@ -354,7 +354,7 @@ namespace HighLandCF_Management
             // 
             this.btnThanhToan.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnThanhToan.Location = new System.Drawing.Point(585, 111);
-            this.btnThanhToan.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnThanhToan.Margin = new System.Windows.Forms.Padding(4);
             this.btnThanhToan.Name = "btnThanhToan";
             this.btnThanhToan.Size = new System.Drawing.Size(283, 41);
             this.btnThanhToan.TabIndex = 4;
@@ -369,9 +369,9 @@ namespace HighLandCF_Management
             this.groupBox3.Controls.Add(this.panel2);
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.groupBox3.Location = new System.Drawing.Point(619, 206);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox3.Size = new System.Drawing.Size(637, 895);
             this.groupBox3.TabIndex = 19;
             this.groupBox3.TabStop = false;
@@ -383,7 +383,7 @@ namespace HighLandCF_Management
             | System.Windows.Forms.AnchorStyles.Left)));
             this.panel2.Controls.Add(this.lstProductCart);
             this.panel2.Location = new System.Drawing.Point(7, 32);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(624, 855);
             this.panel2.TabIndex = 2;
@@ -404,7 +404,7 @@ namespace HighLandCF_Management
             this.lstProductCart.GridLines = true;
             this.lstProductCart.HideSelection = false;
             this.lstProductCart.Location = new System.Drawing.Point(0, 4);
-            this.lstProductCart.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lstProductCart.Margin = new System.Windows.Forms.Padding(4);
             this.lstProductCart.Name = "lstProductCart";
             this.lstProductCart.Size = new System.Drawing.Size(617, 847);
             this.lstProductCart.TabIndex = 0;
@@ -453,7 +453,7 @@ namespace HighLandCF_Management
             this.lstBillNoPayment.GridLines = true;
             this.lstBillNoPayment.HideSelection = false;
             this.lstBillNoPayment.Location = new System.Drawing.Point(1251, 238);
-            this.lstBillNoPayment.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lstBillNoPayment.Margin = new System.Windows.Forms.Padding(4);
             this.lstBillNoPayment.Name = "lstBillNoPayment";
             this.lstBillNoPayment.Size = new System.Drawing.Size(245, 856);
             this.lstBillNoPayment.TabIndex = 20;
@@ -478,9 +478,9 @@ namespace HighLandCF_Management
             this.groupBox1.Controls.Add(this.flbTable);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.groupBox1.Location = new System.Drawing.Point(1503, 47);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(647, 1055);
             this.groupBox1.TabIndex = 21;
             this.groupBox1.TabStop = false;
@@ -498,7 +498,7 @@ namespace HighLandCF_Management
             this.flbTable.Controls.Add(this.btnLamMoi);
             this.flbTable.Controls.Add(this.btnThoat);
             this.flbTable.Location = new System.Drawing.Point(8, 30);
-            this.flbTable.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.flbTable.Margin = new System.Windows.Forms.Padding(4);
             this.flbTable.Name = "flbTable";
             this.flbTable.Size = new System.Drawing.Size(300, 1025);
             this.flbTable.TabIndex = 5;
@@ -509,7 +509,7 @@ namespace HighLandCF_Management
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnCreateBill.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnCreateBill.Location = new System.Drawing.Point(4, 4);
-            this.btnCreateBill.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCreateBill.Margin = new System.Windows.Forms.Padding(4);
             this.btnCreateBill.Name = "btnCreateBill";
             this.btnCreateBill.Size = new System.Drawing.Size(164, 41);
             this.btnCreateBill.TabIndex = 14;
@@ -523,7 +523,7 @@ namespace HighLandCF_Management
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnCancelBill.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnCancelBill.Location = new System.Drawing.Point(4, 53);
-            this.btnCancelBill.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCancelBill.Margin = new System.Windows.Forms.Padding(4);
             this.btnCancelBill.Name = "btnCancelBill";
             this.btnCancelBill.Size = new System.Drawing.Size(164, 41);
             this.btnCancelBill.TabIndex = 15;
@@ -535,7 +535,7 @@ namespace HighLandCF_Management
             // 
             this.btnTachBan.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnTachBan.Location = new System.Drawing.Point(4, 102);
-            this.btnTachBan.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnTachBan.Margin = new System.Windows.Forms.Padding(4);
             this.btnTachBan.Name = "btnTachBan";
             this.btnTachBan.Size = new System.Drawing.Size(164, 41);
             this.btnTachBan.TabIndex = 9;
@@ -547,7 +547,7 @@ namespace HighLandCF_Management
             // 
             this.btnLamMoi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnLamMoi.Location = new System.Drawing.Point(4, 151);
-            this.btnLamMoi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnLamMoi.Margin = new System.Windows.Forms.Padding(4);
             this.btnLamMoi.Name = "btnLamMoi";
             this.btnLamMoi.Size = new System.Drawing.Size(164, 41);
             this.btnLamMoi.TabIndex = 12;
@@ -561,7 +561,7 @@ namespace HighLandCF_Management
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnThoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnThoat.Location = new System.Drawing.Point(4, 200);
-            this.btnThoat.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnThoat.Margin = new System.Windows.Forms.Padding(4);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(164, 41);
             this.btnThoat.TabIndex = 13;
@@ -576,9 +576,9 @@ namespace HighLandCF_Management
             // statusStrip1
             // 
             this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.statusStrip1.Location = new System.Drawing.Point(0, 898);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 900);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(1827, 24);
+            this.statusStrip1.Size = new System.Drawing.Size(1827, 22);
             this.statusStrip1.TabIndex = 22;
             this.statusStrip1.Text = "statusStrip1";
             this.statusStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.statusStrip1_ItemClicked);
