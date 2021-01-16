@@ -34,6 +34,18 @@ namespace DAO_Highland
 
             return null;
         }
+        public static AccountDTO GetAccount1(string user)
+        {
+            var query = "SELECT [SALARY_BY_CA],[ID],[PASS],[NAME],[PASSPORT],[PLACEOFBIRTH],[TELEPHONE],[ADDRESS],[RIGHTS],[STATUS] FROM ACCOUNT WHERE  NAME = @user ";
+            var data = DataProvider.Instance.ExcuteQuery(query, new object[] { user });
+
+            if (data.Rows.Count > 0)
+            {
+                return new AccountDTO(data.Rows[0]);
+            }
+
+            return null;
+        }
 
         public static List<AccountDTO> GetAllListAccount()
         {
@@ -85,6 +97,12 @@ namespace DAO_Highland
         public static bool IsLogin(int username, string password)
         {
             var query = "SELECT [SALARY_BY_CA],[ID],[PASS],[NAME],[PASSPORT],[PLACEOFBIRTH],[TELEPHONE],[ADDRESS],[RIGHTS],[STATUS] FROM DBO.ACCOUNT WHERE ID = @user and Pass = @pass ";
+            var resuft = DataProvider.Instance.ExcuteQuery(query, new object[] { username, password });
+            return resuft.Rows.Count > 0;
+        }
+        public static bool IsLogin1(string username, string password)
+        {
+            var query = "SELECT [SALARY_BY_CA],[ID],[PASS],[NAME],[PASSPORT],[PLACEOFBIRTH],[TELEPHONE],[ADDRESS],[RIGHTS],[STATUS] FROM DBO.ACCOUNT WHERE NAME = @user and Pass = @pass ";
             var resuft = DataProvider.Instance.ExcuteQuery(query, new object[] { username, password });
             return resuft.Rows.Count > 0;
         }

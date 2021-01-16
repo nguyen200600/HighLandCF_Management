@@ -11,8 +11,8 @@ namespace BUS_Highland
     {
         public static bool DeleteAccount(AccountDTO ac) => AccountDAO.DeleteAccount(ac);
 
+        public static AccountDTO GetAccount1(string user) => AccountDAO.GetAccount1(user);
         public static AccountDTO GetAccount(int user) => AccountDAO.GetAccount(user);
-
         public static List<AccountDTO> GetAllListAccount() => AccountDAO.GetAllListAccount();
 
         public static List<AccountDTO> GetListAccountOnStatus(int status) => AccountDAO.GetListAccountOnStatus(status);
@@ -22,6 +22,7 @@ namespace BUS_Highland
         public static bool InsertAccount(AccountDTO ac) => AccountDAO.InsertAccount(ac);
 
         public static bool IsLogin(int id, string password) => AccountDAO.IsLogin(id, password);
+        public static bool IsLogin1(string id, string password) => AccountDAO.IsLogin1(id, password);
 
         public static bool ResetAccount(int user) => AccountDAO.ResetAccount(user);
 

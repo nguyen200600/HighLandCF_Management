@@ -43,6 +43,8 @@ namespace HighLandCF_Management
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.thôngTinCáNhânToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label3 = new System.Windows.Forms.Label();
+            this.btnOK = new System.Windows.Forms.Button();
+            this.txtNhanvien = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -55,6 +57,7 @@ namespace HighLandCF_Management
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.SystemColors.Control;
+            this.panel1.Controls.Add(this.btnOK);
             this.panel1.Controls.Add(this.lblNotification);
             this.panel1.Controls.Add(this.chkHidePass);
             this.panel1.Controls.Add(this.btnThoat);
@@ -92,10 +95,10 @@ namespace HighLandCF_Management
             // btnThoat
             // 
             this.btnThoat.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnThoat.Location = new System.Drawing.Point(403, 255);
+            this.btnThoat.Location = new System.Drawing.Point(315, 256);
             this.btnThoat.Margin = new System.Windows.Forms.Padding(4);
             this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(120, 42);
+            this.btnThoat.Size = new System.Drawing.Size(143, 42);
             this.btnThoat.TabIndex = 2;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = true;
@@ -103,7 +106,7 @@ namespace HighLandCF_Management
             // 
             // btnDangNhap
             // 
-            this.btnDangNhap.Location = new System.Drawing.Point(249, 255);
+            this.btnDangNhap.Location = new System.Drawing.Point(98, 255);
             this.btnDangNhap.Margin = new System.Windows.Forms.Padding(4);
             this.btnDangNhap.Name = "btnDangNhap";
             this.btnDangNhap.Size = new System.Drawing.Size(146, 43);
@@ -146,6 +149,7 @@ namespace HighLandCF_Management
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.txtNhanvien);
             this.panel2.Controls.Add(this.cbxNhanVien);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Location = new System.Drawing.Point(4, 50);
@@ -162,6 +166,7 @@ namespace HighLandCF_Management
             this.cbxNhanVien.Name = "cbxNhanVien";
             this.cbxNhanVien.Size = new System.Drawing.Size(276, 33);
             this.cbxNhanVien.TabIndex = 0;
+            this.cbxNhanVien.SelectedIndexChanged += new System.EventHandler(this.cbxNhanVien_SelectedIndexChanged);
             this.cbxNhanVien.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.cbxNhanVien_KeyPress);
             // 
             // label1
@@ -208,10 +213,29 @@ namespace HighLandCF_Management
             this.label3.Text = "ĐĂNG NHẬP";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // btnOK
+            // 
+            this.btnOK.Location = new System.Drawing.Point(98, 256);
+            this.btnOK.Name = "btnOK";
+            this.btnOK.Size = new System.Drawing.Size(146, 42);
+            this.btnOK.TabIndex = 6;
+            this.btnOK.Text = "Đăng Nhập";
+            this.btnOK.UseVisualStyleBackColor = true;
+            this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
+            // 
+            // txtNhanvien
+            // 
+            this.txtNhanvien.Location = new System.Drawing.Point(229, 11);
+            this.txtNhanvien.Name = "txtNhanvien";
+            this.txtNhanvien.Size = new System.Drawing.Size(276, 32);
+            this.txtNhanvien.TabIndex = 1;
+            // 
             // frm_DangNhap
             // 
+            this.AcceptButton = this.btnDangNhap;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this.btnThoat;
             this.ClientSize = new System.Drawing.Size(563, 425);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.menuStrip1);
@@ -225,6 +249,7 @@ namespace HighLandCF_Management
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -248,6 +273,8 @@ namespace HighLandCF_Management
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem thôngTinCáNhânToolStripMenuItem;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button btnOK;
+        private System.Windows.Forms.TextBox txtNhanvien;
     }
 }
 

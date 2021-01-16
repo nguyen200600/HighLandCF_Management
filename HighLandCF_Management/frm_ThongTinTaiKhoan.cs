@@ -23,6 +23,7 @@ namespace HighLandCF_Management
         {
             frm_LayLaiMatKhau frm = new frm_LayLaiMatKhau(_account, 1);
             frm.ShowDialog();
+            
         }
 
         private void btnOut_Click(object sender, EventArgs e)

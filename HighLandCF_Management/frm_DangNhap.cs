@@ -68,7 +68,7 @@ namespace HighLandCF_Management
             else
                 lblNotification.Text = "Bạn nhập sai tài khoản hoặc mật khẩu. Vui lòng nhập lại!";
         }
-
+        
         private void btnThoat_Click(object sender, EventArgs e) => Close();
 
         private void cbxNhanVien_KeyPress(object sender, KeyPressEventArgs e)
@@ -106,6 +106,7 @@ namespace HighLandCF_Management
         }
 
         private bool Login(int username, string password) => AccountBUS.IsLogin(username, password);
+        private bool Login1(string username, string password) => AccountBUS.IsLogin1(username, password);
 
         private void txtMatKhau_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -115,5 +116,56 @@ namespace HighLandCF_Management
             }
             else e.Handled = true;
         }
+
+        private void cbxNhanVien_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnOK_Click(object sender, EventArgs e)
+        {
+            string username = txtNhanvien.Text;
+            string password = txtMatKhau.Text;
+            if (Login1(username, password))
+            {
+                Program.sAccount = AccountBUS.GetAccount1(username);
+                if (Program.sAccount.Status == 1)
+                {
+                    Program.sAccount = AccountBUS.GetAccount1(username);
+                    if (Program.sAccount.Right == 0)
+                    {
+                        XoaTruongDangNhap();
+
+                        frm_Main n = new frm_Main();
+                        Hide();
+                        n.ShowDialog();
+                        Show();
+
+                        LoadAccount();
+                    }
+                    else if (Program.sAccount.Right == 1)
+                    {
+                        XoaTruongDangNhap();
+                        frm_YeuCauGoiThucUong y = new frm_YeuCauGoiThucUong();
+                        Hide();
+                        y.ShowDialog();
+                        Show();
+                        LoadAccount();
+                    }
+                    else
+                    {
+                        Close();
+                    }
+                }
+                else
+                {
+                    Program.sAccount = null;
+                    lblNotification.Text = "Tài khoản của bạn đã bị khóa bởi người quản trị.";
+                }
+            }
+            else
+                lblNotification.Text = "Bạn nhập sai tài khoản hoặc mật khẩu. Vui lòng nhập lại!";
+        }
     }
 }
+    
