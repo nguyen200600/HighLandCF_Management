@@ -125,6 +125,7 @@ namespace HighLandCF_Management
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtXacNhap);
             this.Controls.Add(this.lblThongBao);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frm_XacNhan";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

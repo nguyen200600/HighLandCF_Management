@@ -278,9 +278,10 @@ namespace HighLandCF_Management
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label23);
             this.Controls.Add(this.panel5);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frm_LayLaiMatKhau";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frm_LayLaiMatKhau";
+            this.Text = "Đổi mật khẩu";
             this.Load += new System.EventHandler(this.frm_LayLaiMatKhau_Load);
             this.panel3.ResumeLayout(false);
             this.panel2.ResumeLayout(false);

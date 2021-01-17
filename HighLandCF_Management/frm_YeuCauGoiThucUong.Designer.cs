@@ -609,10 +609,11 @@ namespace HighLandCF_Management
             this.Controls.Add(this.panelTemplate);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.label23);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frm_YeuCauGoiThucUong";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frm_YeuCauGoiThucUong";
+            this.Text = "Đặt món";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frm_YeuCauGoiThucUong_Load);
             this.groupBox2.ResumeLayout(false);

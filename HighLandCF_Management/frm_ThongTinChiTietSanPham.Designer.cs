@@ -229,6 +229,7 @@ namespace HighLandCF_Management
             this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label26);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frm_ThongTinChiTietSanPham";
             this.Text = "Thông tin chi tiết sản phẩm";
