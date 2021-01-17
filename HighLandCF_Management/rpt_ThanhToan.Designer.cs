@@ -37,14 +37,14 @@ namespace HighLandCF_Management
             this.rptXuatHD.Location = new System.Drawing.Point(-1, -2);
             this.rptXuatHD.Name = "rptXuatHD";
             this.rptXuatHD.ServerReport.BearerToken = null;
-            this.rptXuatHD.Size = new System.Drawing.Size(427, 509);
+            this.rptXuatHD.Size = new System.Drawing.Size(603, 750);
             this.rptXuatHD.TabIndex = 0;
             // 
             // rpt_ThanhToan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(428, 510);
+            this.ClientSize = new System.Drawing.Size(603, 745);
             this.Controls.Add(this.rptXuatHD);
             this.Name = "rpt_ThanhToan";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

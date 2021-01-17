@@ -119,6 +119,11 @@
     <Compile Include="frm_YeuCauGoiThucUong.Designer.cs">
       <DependentUpon>frm_YeuCauGoiThucUong.cs</DependentUpon>
     </Compile>
+    <Compile Include="HIGHLANDDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HIGHLANDDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="rpt_ThanhToan.cs">
@@ -188,6 +193,17 @@
     <EmbeddedResource Include="rpt_ThongKeDoanhThu.resx">
       <DependentUpon>rpt_ThongKeDoanhThu.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="HIGHLANDDataSet.xsc">
+      <DependentUpon>HIGHLANDDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="HIGHLANDDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HIGHLANDDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HIGHLANDDataSet.xss">
+      <DependentUpon>HIGHLANDDataSet.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\DataSources\DTO_Highland.AccountDetailDTO.datasource" />
     <None Include="Properties\DataSources\DTO_Highland.AccountDTO.datasource" />

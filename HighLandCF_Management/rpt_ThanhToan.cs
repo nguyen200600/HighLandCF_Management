@@ -26,7 +26,7 @@ namespace HighLandCF_Management
                 lstProduct = BUS_Highland.MenuBUS.GetReviewBill(MaHD);
             }
 
-            rptXuatHD.LocalReport.ReportEmbeddedResource = "HighLandCF_Management.rptThanhToan.rdlc";
+            rptXuatHD.LocalReport.ReportEmbeddedResource = "HighLandCF_Management.rpt_ThanhToan.rdlc";
             if (tienton != "0")
             {
                 tienton = string.Format("{0:0,0}", Convert.ToDouble(tienton).ToString("0,0"));
@@ -58,7 +58,7 @@ namespace HighLandCF_Management
             rptXuatHD.LocalReport.SetParameters(new ReportParameter("paraThoiGian", thoigian.ToString(), false));
             rptXuatHD.LocalReport.SetParameters(new ReportParameter("paraTongTien", tongtien, false));
             rptXuatHD.LocalReport.SetParameters(new ReportParameter("paraKhuyenMai", khuyenmai, false));
-            rptXuatHD.LocalReport.SetParameters(new ReportParameter("parasTienKhachTra", tienkhachhang, false));
+            rptXuatHD.LocalReport.SetParameters(new ReportParameter("paraTienKhachTra", tienkhachhang, false));
             rptXuatHD.LocalReport.SetParameters(new ReportParameter("paraTienTon", tienton, false));
             rptXuatHD.LocalReport.SetParameters(new ReportParameter("paraThanhTien", thanhtien, false));
             rptXuatHD.LocalReport.SetParameters(new ReportParameter("paraNameBill", TenHD, false));
