@@ -22,7 +22,7 @@ namespace DAO_Highland
         public static List<ProductDTO> GeProductByName(string name)
         {
             List<ProductDTO> listProduct = new List<ProductDTO>();
-            string query = string.Format("SELECT * FROM PRODUCT WHERE FCHUYENCODAUTHANHKHONGDAU(NAMEPRODUCTS) LIKE N'%' + FCHUYENCODAUTHANHKHONGDAU(N'{0}') + '%' AND PRODUCT.IDTYPEDINK NOT IN (SELECT ID FROM TYPEPRODUCT WHERE STATUS = 0)", name);
+            string query = string.Format("SELECT * FROM PRODUCT WHERE dbo.FCHUYENCODAUTHANHKHONGDAU(NAMEPRODUCTS) LIKE N'%' + dbo.FCHUYENCODAUTHANHKHONGDAU(N'{0}') + '%' AND PRODUCT.IDTYPEDINK NOT IN (SELECT ID FROM TYPEPRODUCT WHERE STATUS = 0)", name);
             DataTable data = DataProvider.Instance.ExcuteQuery(query);
             foreach (DataRow item in data.Rows)
             {

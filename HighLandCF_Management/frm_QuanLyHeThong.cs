@@ -736,7 +736,7 @@ namespace HighLandCF_Management
             }
         }
 
-        private void button5_Click(object sender, EventArgs e) => LoadListBill();
+        private void button5_Click(object sender, EventArgs e) => LoadRevenue();
 
         private void btnWatchProduct_Click(object sender, EventArgs e)=> DeleteTextProduct();
 
