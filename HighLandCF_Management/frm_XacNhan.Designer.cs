@@ -43,9 +43,10 @@ namespace HighLandCF_Management
             this.btnOK.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.btnOK.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnOK.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOK.Location = new System.Drawing.Point(141, 120);
+            this.btnOK.Location = new System.Drawing.Point(188, 148);
+            this.btnOK.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnOK.Name = "btnOK";
-            this.btnOK.Size = new System.Drawing.Size(110, 36);
+            this.btnOK.Size = new System.Drawing.Size(147, 44);
             this.btnOK.TabIndex = 9;
             this.btnOK.Text = "Đồng ý";
             this.btnOK.UseVisualStyleBackColor = false;
@@ -54,9 +55,10 @@ namespace HighLandCF_Management
             // 
             this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancel.Location = new System.Drawing.Point(256, 120);
+            this.btnCancel.Location = new System.Drawing.Point(341, 148);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(110, 36);
+            this.btnCancel.Size = new System.Drawing.Size(147, 44);
             this.btnCancel.TabIndex = 8;
             this.btnCancel.Text = "Hủy";
             this.btnCancel.UseVisualStyleBackColor = true;
@@ -64,9 +66,10 @@ namespace HighLandCF_Management
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(10, 81);
+            this.label2.Location = new System.Drawing.Point(13, 100);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(134, 23);
+            this.label2.Size = new System.Drawing.Size(179, 28);
             this.label2.TabIndex = 7;
             this.label2.Text = "Mật khẩu của bạn:";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -74,10 +77,11 @@ namespace HighLandCF_Management
             // txtXacNhap
             // 
             this.txtXacNhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtXacNhap.Location = new System.Drawing.Point(150, 80);
+            this.txtXacNhap.Location = new System.Drawing.Point(200, 98);
+            this.txtXacNhap.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtXacNhap.Name = "txtXacNhap";
             this.txtXacNhap.ShortcutsEnabled = false;
-            this.txtXacNhap.Size = new System.Drawing.Size(217, 26);
+            this.txtXacNhap.Size = new System.Drawing.Size(288, 30);
             this.txtXacNhap.TabIndex = 6;
             this.txtXacNhap.UseSystemPasswordChar = true;
             this.txtXacNhap.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtXacNhap_KeyPress);
@@ -85,24 +89,27 @@ namespace HighLandCF_Management
             // lblThongBao
             // 
             this.lblThongBao.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblThongBao.Location = new System.Drawing.Point(10, 7);
+            this.lblThongBao.Location = new System.Drawing.Point(13, 9);
+            this.lblThongBao.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblThongBao.Name = "lblThongBao";
-            this.lblThongBao.Size = new System.Drawing.Size(357, 71);
+            this.lblThongBao.Size = new System.Drawing.Size(476, 87);
             this.lblThongBao.TabIndex = 5;
             this.lblThongBao.Text = "Điều này rất quan trọng với hệ thống, ";
             this.lblThongBao.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblThongBao.Click += new System.EventHandler(this.lblThongBao_Click);
             // 
             // frm_XacNhan
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(412, 191);
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ClientSize = new System.Drawing.Size(549, 235);
             this.Controls.Add(this.btnOK);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtXacNhap);
             this.Controls.Add(this.lblThongBao);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frm_XacNhan";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Xác Nhận";

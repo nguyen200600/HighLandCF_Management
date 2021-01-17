@@ -210,10 +210,10 @@ namespace HighLandCF_Management
             // 
             // label23
             // 
-            this.label23.BackColor = System.Drawing.Color.LightPink;
+            this.label23.BackColor = System.Drawing.SystemColors.Highlight;
             this.label23.Dock = System.Windows.Forms.DockStyle.Top;
             this.label23.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label23.ForeColor = System.Drawing.Color.Maroon;
+            this.label23.ForeColor = System.Drawing.Color.White;
             this.label23.Location = new System.Drawing.Point(0, 0);
             this.label23.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label23.Name = "label23";
@@ -226,6 +226,7 @@ namespace HighLandCF_Management
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(537, 434);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label23);

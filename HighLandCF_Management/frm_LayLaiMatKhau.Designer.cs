@@ -56,10 +56,10 @@ namespace HighLandCF_Management
             // 
             // label23
             // 
-            this.label23.BackColor = System.Drawing.Color.LightPink;
+            this.label23.BackColor = System.Drawing.SystemColors.Highlight;
             this.label23.Dock = System.Windows.Forms.DockStyle.Top;
             this.label23.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label23.ForeColor = System.Drawing.Color.Maroon;
+            this.label23.ForeColor = System.Drawing.Color.White;
             this.label23.Location = new System.Drawing.Point(0, 0);
             this.label23.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label23.Name = "label23";
@@ -71,7 +71,7 @@ namespace HighLandCF_Management
             // lblThongBao
             // 
             this.lblThongBao.ForeColor = System.Drawing.Color.Red;
-            this.lblThongBao.Location = new System.Drawing.Point(8, 0);
+            this.lblThongBao.Location = new System.Drawing.Point(8, 5);
             this.lblThongBao.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblThongBao.Name = "lblThongBao";
             this.lblThongBao.Size = new System.Drawing.Size(455, 33);
@@ -82,10 +82,10 @@ namespace HighLandCF_Management
             this.panel3.Controls.Add(this.lblNhanVien);
             this.panel3.Controls.Add(this.cbxNhanVien);
             this.panel3.Controls.Add(this.label5);
-            this.panel3.Location = new System.Drawing.Point(8, 37);
+            this.panel3.Location = new System.Drawing.Point(8, 42);
             this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(455, 44);
+            this.panel3.Size = new System.Drawing.Size(455, 39);
             this.panel3.TabIndex = 1;
             // 
             // lblNhanVien
@@ -152,7 +152,7 @@ namespace HighLandCF_Management
             // 
             // btn_Huy
             // 
-            this.btn_Huy.Location = new System.Drawing.Point(345, 249);
+            this.btn_Huy.Location = new System.Drawing.Point(342, 279);
             this.btn_Huy.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Huy.Name = "btn_Huy";
             this.btn_Huy.Size = new System.Drawing.Size(107, 46);
@@ -163,7 +163,7 @@ namespace HighLandCF_Management
             // 
             // btnChange
             // 
-            this.btnChange.Location = new System.Drawing.Point(156, 249);
+            this.btnChange.Location = new System.Drawing.Point(105, 279);
             this.btnChange.Margin = new System.Windows.Forms.Padding(4);
             this.btnChange.Name = "btnChange";
             this.btnChange.Size = new System.Drawing.Size(181, 46);
@@ -248,16 +248,17 @@ namespace HighLandCF_Management
             this.panel5.Controls.Add(this.panel4);
             this.panel5.Controls.Add(this.panel1);
             this.panel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.panel5.Location = new System.Drawing.Point(8, 96);
+            this.panel5.Location = new System.Drawing.Point(8, 47);
             this.panel5.Margin = new System.Windows.Forms.Padding(4);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(468, 305);
+            this.panel5.Size = new System.Drawing.Size(468, 354);
             this.panel5.TabIndex = 9;
             // 
             // frm_LayLaiMatKhau
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(493, 424);
             this.Controls.Add(this.label23);
             this.Controls.Add(this.panel5);

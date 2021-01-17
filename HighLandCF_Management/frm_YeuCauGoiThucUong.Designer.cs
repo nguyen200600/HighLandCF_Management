@@ -71,7 +71,6 @@ namespace HighLandCF_Management
             this.flbTable = new System.Windows.Forms.FlowLayoutPanel();
             this.btnCreateBill = new System.Windows.Forms.Button();
             this.btnCancelBill = new System.Windows.Forms.Button();
-            this.btnTachBan = new System.Windows.Forms.Button();
             this.btnLamMoi = new System.Windows.Forms.Button();
             this.btnThoat = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
@@ -88,10 +87,10 @@ namespace HighLandCF_Management
             // 
             // label23
             // 
-            this.label23.BackColor = System.Drawing.Color.LightPink;
+            this.label23.BackColor = System.Drawing.SystemColors.Highlight;
             this.label23.Dock = System.Windows.Forms.DockStyle.Top;
             this.label23.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label23.ForeColor = System.Drawing.Color.Maroon;
+            this.label23.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.label23.Location = new System.Drawing.Point(0, 0);
             this.label23.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label23.Name = "label23";
@@ -104,6 +103,7 @@ namespace HighLandCF_Management
             // 
             this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
+            this.groupBox2.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.groupBox2.Controls.Add(this.panel4);
             this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Controls.Add(this.btnTimKiem);
@@ -201,6 +201,7 @@ namespace HighLandCF_Management
             // 
             this.lstProduct.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
+            this.lstProduct.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.lstProduct.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader6,
             this.columnHeader7,
@@ -248,6 +249,7 @@ namespace HighLandCF_Management
             // 
             // panelTemplate
             // 
+            this.panelTemplate.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.panelTemplate.Controls.Add(this.btnTamTinh);
             this.panelTemplate.Controls.Add(this.lblNgayHienTai);
             this.panelTemplate.Controls.Add(this.label8);
@@ -392,6 +394,7 @@ namespace HighLandCF_Management
             // 
             this.lstProductCart.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
+            this.lstProductCart.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.lstProductCart.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader5,
             this.columnHeader1,
@@ -445,6 +448,7 @@ namespace HighLandCF_Management
             // 
             this.lstBillNoPayment.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
+            this.lstBillNoPayment.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.lstBillNoPayment.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader16,
             this.columnHeader17});
@@ -492,9 +496,9 @@ namespace HighLandCF_Management
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.flbTable.AutoScroll = true;
+            this.flbTable.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.flbTable.Controls.Add(this.btnCreateBill);
             this.flbTable.Controls.Add(this.btnCancelBill);
-            this.flbTable.Controls.Add(this.btnTachBan);
             this.flbTable.Controls.Add(this.btnLamMoi);
             this.flbTable.Controls.Add(this.btnThoat);
             this.flbTable.Location = new System.Drawing.Point(8, 30);
@@ -531,22 +535,10 @@ namespace HighLandCF_Management
             this.btnCancelBill.UseVisualStyleBackColor = true;
             this.btnCancelBill.Click += new System.EventHandler(this.btnCancelBill_Click);
             // 
-            // btnTachBan
-            // 
-            this.btnTachBan.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnTachBan.Location = new System.Drawing.Point(4, 102);
-            this.btnTachBan.Margin = new System.Windows.Forms.Padding(4);
-            this.btnTachBan.Name = "btnTachBan";
-            this.btnTachBan.Size = new System.Drawing.Size(164, 41);
-            this.btnTachBan.TabIndex = 9;
-            this.btnTachBan.Text = "Chuyển - Đổi";
-            this.btnTachBan.UseVisualStyleBackColor = true;
-            this.btnTachBan.Visible = false;
-            // 
             // btnLamMoi
             // 
             this.btnLamMoi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnLamMoi.Location = new System.Drawing.Point(4, 151);
+            this.btnLamMoi.Location = new System.Drawing.Point(4, 102);
             this.btnLamMoi.Margin = new System.Windows.Forms.Padding(4);
             this.btnLamMoi.Name = "btnLamMoi";
             this.btnLamMoi.Size = new System.Drawing.Size(164, 41);
@@ -560,7 +552,7 @@ namespace HighLandCF_Management
             this.btnThoat.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnThoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnThoat.Location = new System.Drawing.Point(4, 200);
+            this.btnThoat.Location = new System.Drawing.Point(4, 151);
             this.btnThoat.Margin = new System.Windows.Forms.Padding(4);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(164, 41);
@@ -662,7 +654,6 @@ namespace HighLandCF_Management
         private System.Windows.Forms.Button btnCancelBill;
         private System.Windows.Forms.Button btnLamMoi;
         private System.Windows.Forms.Button btnThoat;
-        private System.Windows.Forms.Button btnTachBan;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.StatusStrip statusStrip1;
     }

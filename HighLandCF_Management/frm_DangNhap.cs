@@ -166,6 +166,11 @@ namespace HighLandCF_Management
             else
                 lblNotification.Text = "Bạn nhập sai tài khoản hoặc mật khẩu. Vui lòng nhập lại!";
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
     

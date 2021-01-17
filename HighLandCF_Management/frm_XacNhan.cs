@@ -29,5 +29,10 @@ namespace HighLandCF_Management
                 e.Handled = true;
             }
         }
+
+        private void lblThongBao_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
