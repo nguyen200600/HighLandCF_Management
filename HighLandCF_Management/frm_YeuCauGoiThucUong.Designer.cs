@@ -30,6 +30,7 @@ namespace HighLandCF_Management
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_YeuCauGoiThucUong));
             this.label23 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -75,6 +76,7 @@ namespace HighLandCF_Management
             this.btnThoat = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.groupBox2.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -83,6 +85,7 @@ namespace HighLandCF_Management
             this.panel2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.flbTable.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.SuspendLayout();
             // 
             // label23
@@ -177,13 +180,14 @@ namespace HighLandCF_Management
             // 
             // btnTimKiem
             // 
+            this.btnTimKiem.BackColor = System.Drawing.Color.DarkSalmon;
             this.btnTimKiem.Location = new System.Drawing.Point(453, 26);
             this.btnTimKiem.Margin = new System.Windows.Forms.Padding(4);
             this.btnTimKiem.Name = "btnTimKiem";
             this.btnTimKiem.Size = new System.Drawing.Size(152, 38);
             this.btnTimKiem.TabIndex = 11;
             this.btnTimKiem.Text = "Tìm";
-            this.btnTimKiem.UseVisualStyleBackColor = true;
+            this.btnTimKiem.UseVisualStyleBackColor = false;
             this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
             // 
             // panel1
@@ -268,6 +272,7 @@ namespace HighLandCF_Management
             // 
             // btnTamTinh
             // 
+            this.btnTamTinh.BackColor = System.Drawing.Color.DarkSalmon;
             this.btnTamTinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnTamTinh.Location = new System.Drawing.Point(585, 58);
             this.btnTamTinh.Margin = new System.Windows.Forms.Padding(4);
@@ -275,7 +280,7 @@ namespace HighLandCF_Management
             this.btnTamTinh.Size = new System.Drawing.Size(283, 43);
             this.btnTamTinh.TabIndex = 15;
             this.btnTamTinh.Text = "Tạm Tính";
-            this.btnTamTinh.UseVisualStyleBackColor = true;
+            this.btnTamTinh.UseVisualStyleBackColor = false;
             this.btnTamTinh.Click += new System.EventHandler(this.btnTamTinh_Click);
             // 
             // lblNgayHienTai
@@ -354,6 +359,7 @@ namespace HighLandCF_Management
             // 
             // btnThanhToan
             // 
+            this.btnThanhToan.BackColor = System.Drawing.Color.DarkSalmon;
             this.btnThanhToan.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnThanhToan.Location = new System.Drawing.Point(585, 111);
             this.btnThanhToan.Margin = new System.Windows.Forms.Padding(4);
@@ -361,7 +367,7 @@ namespace HighLandCF_Management
             this.btnThanhToan.Size = new System.Drawing.Size(283, 41);
             this.btnThanhToan.TabIndex = 4;
             this.btnThanhToan.Text = "Thanh toán";
-            this.btnThanhToan.UseVisualStyleBackColor = true;
+            this.btnThanhToan.UseVisualStyleBackColor = false;
             this.btnThanhToan.Click += new System.EventHandler(this.btnThanhToan_Click);
             // 
             // groupBox3
@@ -511,54 +517,58 @@ namespace HighLandCF_Management
             // 
             this.btnCreateBill.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCreateBill.BackColor = System.Drawing.Color.DarkSalmon;
             this.btnCreateBill.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnCreateBill.Location = new System.Drawing.Point(4, 4);
             this.btnCreateBill.Margin = new System.Windows.Forms.Padding(4);
             this.btnCreateBill.Name = "btnCreateBill";
-            this.btnCreateBill.Size = new System.Drawing.Size(164, 41);
+            this.btnCreateBill.Size = new System.Drawing.Size(164, 67);
             this.btnCreateBill.TabIndex = 14;
             this.btnCreateBill.Text = "Tạo Hóa Đơn";
-            this.btnCreateBill.UseVisualStyleBackColor = true;
+            this.btnCreateBill.UseVisualStyleBackColor = false;
             this.btnCreateBill.Click += new System.EventHandler(this.btnCreateBill_Click);
             // 
             // btnCancelBill
             // 
             this.btnCancelBill.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCancelBill.BackColor = System.Drawing.Color.DarkSalmon;
             this.btnCancelBill.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnCancelBill.Location = new System.Drawing.Point(4, 53);
+            this.btnCancelBill.Location = new System.Drawing.Point(4, 79);
             this.btnCancelBill.Margin = new System.Windows.Forms.Padding(4);
             this.btnCancelBill.Name = "btnCancelBill";
-            this.btnCancelBill.Size = new System.Drawing.Size(164, 41);
+            this.btnCancelBill.Size = new System.Drawing.Size(164, 62);
             this.btnCancelBill.TabIndex = 15;
             this.btnCancelBill.Text = "Hủy Hóa Đơn";
-            this.btnCancelBill.UseVisualStyleBackColor = true;
+            this.btnCancelBill.UseVisualStyleBackColor = false;
             this.btnCancelBill.Click += new System.EventHandler(this.btnCancelBill_Click);
             // 
             // btnLamMoi
             // 
+            this.btnLamMoi.BackColor = System.Drawing.Color.DarkSalmon;
             this.btnLamMoi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnLamMoi.Location = new System.Drawing.Point(4, 102);
+            this.btnLamMoi.Location = new System.Drawing.Point(4, 149);
             this.btnLamMoi.Margin = new System.Windows.Forms.Padding(4);
             this.btnLamMoi.Name = "btnLamMoi";
-            this.btnLamMoi.Size = new System.Drawing.Size(164, 41);
+            this.btnLamMoi.Size = new System.Drawing.Size(164, 62);
             this.btnLamMoi.TabIndex = 12;
             this.btnLamMoi.Text = "Làm Mới";
-            this.btnLamMoi.UseVisualStyleBackColor = true;
+            this.btnLamMoi.UseVisualStyleBackColor = false;
             this.btnLamMoi.Click += new System.EventHandler(this.btnLamMoi_Click);
             // 
             // btnThoat
             // 
             this.btnThoat.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnThoat.BackColor = System.Drawing.Color.DarkSalmon;
             this.btnThoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnThoat.Location = new System.Drawing.Point(4, 151);
+            this.btnThoat.Location = new System.Drawing.Point(4, 219);
             this.btnThoat.Margin = new System.Windows.Forms.Padding(4);
             this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(164, 41);
+            this.btnThoat.Size = new System.Drawing.Size(164, 56);
             this.btnThoat.TabIndex = 13;
             this.btnThoat.Text = "Thoát";
-            this.btnThoat.UseVisualStyleBackColor = true;
+            this.btnThoat.UseVisualStyleBackColor = false;
             this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // timer1
@@ -575,11 +585,23 @@ namespace HighLandCF_Management
             this.statusStrip1.Text = "statusStrip1";
             this.statusStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.statusStrip1_ItemClicked);
             // 
+            // pictureBox7
+            // 
+            this.pictureBox7.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
+            this.pictureBox7.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(70, 45);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox7.TabIndex = 25;
+            this.pictureBox7.TabStop = false;
+            // 
             // frm_YeuCauGoiThucUong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1827, 922);
+            this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.lstBillNoPayment);
@@ -604,6 +626,7 @@ namespace HighLandCF_Management
             this.panel2.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.flbTable.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -656,5 +679,6 @@ namespace HighLandCF_Management
         private System.Windows.Forms.Button btnThoat;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.StatusStrip statusStrip1;
+        private System.Windows.Forms.PictureBox pictureBox7;
     }
 }

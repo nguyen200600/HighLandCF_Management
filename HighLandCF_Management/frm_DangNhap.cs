@@ -171,6 +171,19 @@ namespace HighLandCF_Management
         {
 
         }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void thôngTinTàiKhoảnToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frm_ThongTinTaiKhoan frm_ThongTin = new frm_ThongTinTaiKhoan(AccountBUS.GetAccount((int)cbxNhanVien.SelectedValue));
+            Hide();
+            frm_ThongTin.ShowDialog();
+
+        }
     }
 }
     

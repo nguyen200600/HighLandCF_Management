@@ -29,6 +29,7 @@ namespace HighLandCF_Management
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_QuanLyHeThong));
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.tssNhanvien = new System.Windows.Forms.ToolStripStatusLabel();
             this.tssThoiGian = new System.Windows.Forms.ToolStripStatusLabel();
@@ -112,25 +113,6 @@ namespace HighLandCF_Management
             this.panel9 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.txtNameAcount = new System.Windows.Forms.TextBox();
-            this.tpOrder = new System.Windows.Forms.TabPage();
-            this.label28 = new System.Windows.Forms.Label();
-            this.panel37 = new System.Windows.Forms.Panel();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.panel41 = new System.Windows.Forms.Panel();
-            this.btnCreateTable = new System.Windows.Forms.Button();
-            this.btnNewTable = new System.Windows.Forms.Button();
-            this.panel14 = new System.Windows.Forms.Panel();
-            this.lblIDTable = new System.Windows.Forms.Label();
-            this.txtIDTable = new System.Windows.Forms.TextBox();
-            this.btnDeleteTable = new System.Windows.Forms.Button();
-            this.panel44 = new System.Windows.Forms.Panel();
-            this.label22 = new System.Windows.Forms.Label();
-            this.txtTableName = new System.Windows.Forms.TextBox();
-            this.lstTable = new System.Windows.Forms.ListView();
-            this.columnHeader10 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader11 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.clBan = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader24 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tpVatLieu = new System.Windows.Forms.TabPage();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.txtTongGiaNL = new System.Windows.Forms.TextBox();
@@ -267,6 +249,13 @@ namespace HighLandCF_Management
             this.columnHeader22 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader23 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.radAdminAccount = new System.Windows.Forms.TabControl();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.tpNhanVien.SuspendLayout();
             this.groupBox9.SuspendLayout();
             this.panel25.SuspendLayout();
@@ -287,12 +276,6 @@ namespace HighLandCF_Management
             this.panel12.SuspendLayout();
             this.panel8.SuspendLayout();
             this.panel9.SuspendLayout();
-            this.tpOrder.SuspendLayout();
-            this.panel37.SuspendLayout();
-            this.groupBox4.SuspendLayout();
-            this.panel41.SuspendLayout();
-            this.panel14.SuspendLayout();
-            this.panel44.SuspendLayout();
             this.tpVatLieu.SuspendLayout();
             this.groupBox7.SuspendLayout();
             this.panel22.SuspendLayout();
@@ -325,6 +308,13 @@ namespace HighLandCF_Management
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.radAdminAccount.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.SuspendLayout();
             // 
             // statusStrip1
@@ -333,7 +323,7 @@ namespace HighLandCF_Management
             this.statusStrip1.Location = new System.Drawing.Point(0, 703);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Padding = new System.Windows.Forms.Padding(1, 0, 17, 0);
-            this.statusStrip1.Size = new System.Drawing.Size(1421, 22);
+            this.statusStrip1.Size = new System.Drawing.Size(1343, 22);
             this.statusStrip1.TabIndex = 4;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -351,6 +341,7 @@ namespace HighLandCF_Management
             // 
             // tpNhanVien
             // 
+            this.tpNhanVien.Controls.Add(this.pictureBox7);
             this.tpNhanVien.Controls.Add(this.groupBox9);
             this.tpNhanVien.Controls.Add(this.groupBox8);
             this.tpNhanVien.Controls.Add(this.label37);
@@ -358,7 +349,7 @@ namespace HighLandCF_Management
             this.tpNhanVien.Margin = new System.Windows.Forms.Padding(4);
             this.tpNhanVien.Name = "tpNhanVien";
             this.tpNhanVien.Padding = new System.Windows.Forms.Padding(4);
-            this.tpNhanVien.Size = new System.Drawing.Size(1413, 692);
+            this.tpNhanVien.Size = new System.Drawing.Size(1335, 692);
             this.tpNhanVien.TabIndex = 8;
             this.tpNhanVien.Text = "Tính lương nhân viên";
             this.tpNhanVien.UseVisualStyleBackColor = true;
@@ -376,7 +367,7 @@ namespace HighLandCF_Management
             this.groupBox9.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox9.Name = "groupBox9";
             this.groupBox9.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox9.Size = new System.Drawing.Size(1395, 465);
+            this.groupBox9.Size = new System.Drawing.Size(1317, 465);
             this.groupBox9.TabIndex = 23;
             this.groupBox9.TabStop = false;
             this.groupBox9.Text = "Danh sách nhân viên đã tính lương theo tháng";
@@ -384,7 +375,7 @@ namespace HighLandCF_Management
             // txtTongTienLuong
             // 
             this.txtTongTienLuong.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtTongTienLuong.Location = new System.Drawing.Point(1141, 424);
+            this.txtTongTienLuong.Location = new System.Drawing.Point(1063, 424);
             this.txtTongTienLuong.Margin = new System.Windows.Forms.Padding(4);
             this.txtTongTienLuong.Name = "txtTongTienLuong";
             this.txtTongTienLuong.ReadOnly = true;
@@ -394,7 +385,7 @@ namespace HighLandCF_Management
             // label40
             // 
             this.label40.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.label40.Location = new System.Drawing.Point(1030, 424);
+            this.label40.Location = new System.Drawing.Point(952, 424);
             this.label40.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label40.Name = "label40";
             this.label40.Size = new System.Drawing.Size(103, 31);
@@ -411,7 +402,7 @@ namespace HighLandCF_Management
             this.panel25.Location = new System.Drawing.Point(4, 26);
             this.panel25.Margin = new System.Windows.Forms.Padding(4);
             this.panel25.Name = "panel25";
-            this.panel25.Size = new System.Drawing.Size(1390, 390);
+            this.panel25.Size = new System.Drawing.Size(1312, 390);
             this.panel25.TabIndex = 13;
             // 
             // lstLuongNhanVien
@@ -437,7 +428,7 @@ namespace HighLandCF_Management
             this.lstLuongNhanVien.Location = new System.Drawing.Point(5, 6);
             this.lstLuongNhanVien.Margin = new System.Windows.Forms.Padding(4);
             this.lstLuongNhanVien.Name = "lstLuongNhanVien";
-            this.lstLuongNhanVien.Size = new System.Drawing.Size(1379, 379);
+            this.lstLuongNhanVien.Size = new System.Drawing.Size(1301, 479);
             this.lstLuongNhanVien.TabIndex = 10;
             this.lstLuongNhanVien.UseCompatibleStateImageBehavior = false;
             this.lstLuongNhanVien.View = System.Windows.Forms.View.Details;
@@ -502,7 +493,7 @@ namespace HighLandCF_Management
             this.groupBox8.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox8.Name = "groupBox8";
             this.groupBox8.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox8.Size = new System.Drawing.Size(1390, 140);
+            this.groupBox8.Size = new System.Drawing.Size(1312, 140);
             this.groupBox8.TabIndex = 22;
             this.groupBox8.TabStop = false;
             this.groupBox8.Text = "Thông tin tính lương ";
@@ -519,19 +510,20 @@ namespace HighLandCF_Management
             this.panel32.Location = new System.Drawing.Point(7, 25);
             this.panel32.Margin = new System.Windows.Forms.Padding(4);
             this.panel32.Name = "panel32";
-            this.panel32.Size = new System.Drawing.Size(1375, 110);
+            this.panel32.Size = new System.Drawing.Size(1297, 110);
             this.panel32.TabIndex = 5;
             // 
             // btnLamMoiNhanVien
             // 
             this.btnLamMoiNhanVien.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnLamMoiNhanVien.Location = new System.Drawing.Point(1195, 59);
+            this.btnLamMoiNhanVien.BackColor = System.Drawing.Color.DarkSalmon;
+            this.btnLamMoiNhanVien.Location = new System.Drawing.Point(1117, 59);
             this.btnLamMoiNhanVien.Margin = new System.Windows.Forms.Padding(4);
             this.btnLamMoiNhanVien.Name = "btnLamMoiNhanVien";
             this.btnLamMoiNhanVien.Size = new System.Drawing.Size(176, 46);
             this.btnLamMoiNhanVien.TabIndex = 19;
             this.btnLamMoiNhanVien.Text = "Làm mới";
-            this.btnLamMoiNhanVien.UseVisualStyleBackColor = true;
+            this.btnLamMoiNhanVien.UseVisualStyleBackColor = false;
             this.btnLamMoiNhanVien.Click += new System.EventHandler(this.btnLamMoiNhanVien_Click);
             // 
             // panel24
@@ -573,7 +565,7 @@ namespace HighLandCF_Management
             this.panel30.Location = new System.Drawing.Point(812, 7);
             this.panel30.Margin = new System.Windows.Forms.Padding(4);
             this.panel30.Name = "panel30";
-            this.panel30.Size = new System.Drawing.Size(559, 50);
+            this.panel30.Size = new System.Drawing.Size(481, 50);
             this.panel30.TabIndex = 21;
             this.panel30.Paint += new System.Windows.Forms.PaintEventHandler(this.panel30_Paint);
             // 
@@ -596,7 +588,7 @@ namespace HighLandCF_Management
             this.txtCaMonth.Margin = new System.Windows.Forms.Padding(4);
             this.txtCaMonth.Name = "txtCaMonth";
             this.txtCaMonth.ShortcutsEnabled = false;
-            this.txtCaMonth.Size = new System.Drawing.Size(394, 26);
+            this.txtCaMonth.Size = new System.Drawing.Size(316, 26);
             this.txtCaMonth.TabIndex = 0;
             // 
             // panel26
@@ -633,13 +625,14 @@ namespace HighLandCF_Management
             // btnThemLuong
             // 
             this.btnThemLuong.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.btnThemLuong.Location = new System.Drawing.Point(987, 59);
+            this.btnThemLuong.BackColor = System.Drawing.Color.DarkSalmon;
+            this.btnThemLuong.Location = new System.Drawing.Point(909, 59);
             this.btnThemLuong.Margin = new System.Windows.Forms.Padding(4);
             this.btnThemLuong.Name = "btnThemLuong";
             this.btnThemLuong.Size = new System.Drawing.Size(176, 46);
             this.btnThemLuong.TabIndex = 20;
             this.btnThemLuong.Text = "Thêm mới";
-            this.btnThemLuong.UseVisualStyleBackColor = true;
+            this.btnThemLuong.UseVisualStyleBackColor = false;
             this.btnThemLuong.Click += new System.EventHandler(this.btnThemLuong_Click);
             // 
             // label37
@@ -651,13 +644,15 @@ namespace HighLandCF_Management
             this.label37.Location = new System.Drawing.Point(4, 4);
             this.label37.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(1405, 44);
+            this.label37.Size = new System.Drawing.Size(1327, 44);
             this.label37.TabIndex = 15;
             this.label37.Text = "TÍNH LƯƠNG NHÂN VIÊN";
             this.label37.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // tpTaiKhoan
             // 
+            this.tpTaiKhoan.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.tpTaiKhoan.Controls.Add(this.pictureBox6);
             this.tpTaiKhoan.Controls.Add(this.label23);
             this.tpTaiKhoan.Controls.Add(this.panel10);
             this.tpTaiKhoan.Controls.Add(this.groupBox5);
@@ -665,10 +660,9 @@ namespace HighLandCF_Management
             this.tpTaiKhoan.Margin = new System.Windows.Forms.Padding(4);
             this.tpTaiKhoan.Name = "tpTaiKhoan";
             this.tpTaiKhoan.Padding = new System.Windows.Forms.Padding(4);
-            this.tpTaiKhoan.Size = new System.Drawing.Size(1343, 461);
+            this.tpTaiKhoan.Size = new System.Drawing.Size(1335, 692);
             this.tpTaiKhoan.TabIndex = 5;
             this.tpTaiKhoan.Text = "Quản lý tài khoản";
-            this.tpTaiKhoan.UseVisualStyleBackColor = true;
             // 
             // label23
             // 
@@ -679,7 +673,7 @@ namespace HighLandCF_Management
             this.label23.Location = new System.Drawing.Point(4, 4);
             this.label23.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(1335, 44);
+            this.label23.Size = new System.Drawing.Size(1327, 44);
             this.label23.TabIndex = 0;
             this.label23.Text = "QUẢN LÝ TÀI KHOẢN NHÂN VIÊN";
             this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -693,7 +687,7 @@ namespace HighLandCF_Management
             this.panel10.Location = new System.Drawing.Point(4, 341);
             this.panel10.Margin = new System.Windows.Forms.Padding(4);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(1320, 92);
+            this.panel10.Size = new System.Drawing.Size(1242, 92);
             this.panel10.TabIndex = 2;
             // 
             // lstAccount
@@ -719,7 +713,7 @@ namespace HighLandCF_Management
             this.lstAccount.Location = new System.Drawing.Point(3, 4);
             this.lstAccount.Margin = new System.Windows.Forms.Padding(4);
             this.lstAccount.Name = "lstAccount";
-            this.lstAccount.Size = new System.Drawing.Size(1308, 79);
+            this.lstAccount.Size = new System.Drawing.Size(1230, 79);
             this.lstAccount.TabIndex = 0;
             this.lstAccount.UseCompatibleStateImageBehavior = false;
             this.lstAccount.View = System.Windows.Forms.View.Details;
@@ -785,7 +779,7 @@ namespace HighLandCF_Management
             this.groupBox5.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox5.Size = new System.Drawing.Size(1312, 282);
+            this.groupBox5.Size = new System.Drawing.Size(1234, 282);
             this.groupBox5.TabIndex = 1;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Thông tin tài khoản";
@@ -811,7 +805,7 @@ namespace HighLandCF_Management
             this.panel6.Location = new System.Drawing.Point(7, 28);
             this.panel6.Margin = new System.Windows.Forms.Padding(4);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(1295, 249);
+            this.panel6.Size = new System.Drawing.Size(1217, 249);
             this.panel6.TabIndex = 5;
             // 
             // panel13
@@ -853,7 +847,7 @@ namespace HighLandCF_Management
             this.panel11.Location = new System.Drawing.Point(859, 2);
             this.panel11.Margin = new System.Windows.Forms.Padding(4);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(428, 50);
+            this.panel11.Size = new System.Drawing.Size(350, 50);
             this.panel11.TabIndex = 14;
             // 
             // label34
@@ -875,55 +869,59 @@ namespace HighLandCF_Management
             this.txtNoiSinh.Margin = new System.Windows.Forms.Padding(4);
             this.txtNoiSinh.Name = "txtNoiSinh";
             this.txtNoiSinh.ShortcutsEnabled = false;
-            this.txtNoiSinh.Size = new System.Drawing.Size(324, 26);
+            this.txtNoiSinh.Size = new System.Drawing.Size(246, 26);
             this.txtNoiSinh.TabIndex = 1;
             // 
             // btnKhoiPhuc
             // 
             this.btnKhoiPhuc.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnKhoiPhuc.Location = new System.Drawing.Point(885, 199);
+            this.btnKhoiPhuc.BackColor = System.Drawing.Color.DarkSalmon;
+            this.btnKhoiPhuc.Location = new System.Drawing.Point(807, 199);
             this.btnKhoiPhuc.Margin = new System.Windows.Forms.Padding(4);
             this.btnKhoiPhuc.Name = "btnKhoiPhuc";
             this.btnKhoiPhuc.Size = new System.Drawing.Size(264, 39);
             this.btnKhoiPhuc.TabIndex = 8;
             this.btnKhoiPhuc.Text = "Khôi phục lại mật khẩu";
-            this.btnKhoiPhuc.UseVisualStyleBackColor = true;
+            this.btnKhoiPhuc.UseVisualStyleBackColor = false;
             this.btnKhoiPhuc.Click += new System.EventHandler(this.btnKhoiPhuc_Click);
             // 
             // btnDeleteAccount
             // 
             this.btnDeleteAccount.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnDeleteAccount.Location = new System.Drawing.Point(541, 201);
+            this.btnDeleteAccount.BackColor = System.Drawing.Color.DarkSalmon;
+            this.btnDeleteAccount.Location = new System.Drawing.Point(463, 201);
             this.btnDeleteAccount.Margin = new System.Windows.Forms.Padding(4);
             this.btnDeleteAccount.Name = "btnDeleteAccount";
             this.btnDeleteAccount.Size = new System.Drawing.Size(165, 39);
             this.btnDeleteAccount.TabIndex = 6;
             this.btnDeleteAccount.Text = "Xóa tài khoản";
-            this.btnDeleteAccount.UseVisualStyleBackColor = true;
+            this.btnDeleteAccount.UseVisualStyleBackColor = false;
             this.btnDeleteAccount.Click += new System.EventHandler(this.btnDeleteAccount_Click);
             // 
             // btnEditAccount
             // 
             this.btnEditAccount.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.btnEditAccount.Location = new System.Drawing.Point(336, 202);
+            this.btnEditAccount.BackColor = System.Drawing.Color.DarkSalmon;
+            this.btnEditAccount.Location = new System.Drawing.Point(258, 202);
             this.btnEditAccount.Margin = new System.Windows.Forms.Padding(4);
             this.btnEditAccount.Name = "btnEditAccount";
             this.btnEditAccount.Size = new System.Drawing.Size(176, 39);
             this.btnEditAccount.TabIndex = 13;
             this.btnEditAccount.Text = "Chỉnh sửa";
-            this.btnEditAccount.UseVisualStyleBackColor = true;
+            this.btnEditAccount.UseVisualStyleBackColor = false;
             this.btnEditAccount.Click += new System.EventHandler(this.btnEditAccount_Click);
             // 
             // btnOutAccount
             // 
             this.btnOutAccount.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnOutAccount.Location = new System.Drawing.Point(1179, 201);
+            this.btnOutAccount.BackColor = System.Drawing.Color.DarkSalmon;
+            this.btnOutAccount.Location = new System.Drawing.Point(1101, 201);
             this.btnOutAccount.Margin = new System.Windows.Forms.Padding(4);
             this.btnOutAccount.Name = "btnOutAccount";
             this.btnOutAccount.Size = new System.Drawing.Size(108, 39);
             this.btnOutAccount.TabIndex = 9;
             this.btnOutAccount.Text = "Thoát";
-            this.btnOutAccount.UseVisualStyleBackColor = true;
+            this.btnOutAccount.UseVisualStyleBackColor = false;
             this.btnOutAccount.Click += new System.EventHandler(this.btnOutAccount_Click);
             // 
             // panel29
@@ -991,13 +989,14 @@ namespace HighLandCF_Management
             // btnNewAccount
             // 
             this.btnNewAccount.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnNewAccount.Location = new System.Drawing.Point(736, 201);
+            this.btnNewAccount.BackColor = System.Drawing.Color.DarkSalmon;
+            this.btnNewAccount.Location = new System.Drawing.Point(658, 201);
             this.btnNewAccount.Margin = new System.Windows.Forms.Padding(4);
             this.btnNewAccount.Name = "btnNewAccount";
             this.btnNewAccount.Size = new System.Drawing.Size(121, 39);
             this.btnNewAccount.TabIndex = 7;
             this.btnNewAccount.Text = "Làm mới";
-            this.btnNewAccount.UseVisualStyleBackColor = true;
+            this.btnNewAccount.UseVisualStyleBackColor = false;
             this.btnNewAccount.Click += new System.EventHandler(this.btnNewAccount_Click);
             // 
             // panel28
@@ -1011,7 +1010,7 @@ namespace HighLandCF_Management
             this.panel28.Location = new System.Drawing.Point(4, 110);
             this.panel28.Margin = new System.Windows.Forms.Padding(4);
             this.panel28.Name = "panel28";
-            this.panel28.Size = new System.Drawing.Size(1283, 84);
+            this.panel28.Size = new System.Drawing.Size(1205, 84);
             this.panel28.TabIndex = 4;
             // 
             // label38
@@ -1054,20 +1053,21 @@ namespace HighLandCF_Management
             this.txtAddress.Multiline = true;
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.ShortcutsEnabled = false;
-            this.txtAddress.Size = new System.Drawing.Size(807, 73);
+            this.txtAddress.Size = new System.Drawing.Size(729, 73);
             this.txtAddress.TabIndex = 0;
             this.txtAddress.TextChanged += new System.EventHandler(this.txtAddress_TextChanged);
             // 
             // btnAddAccount
             // 
             this.btnAddAccount.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.btnAddAccount.Location = new System.Drawing.Point(336, 199);
+            this.btnAddAccount.BackColor = System.Drawing.Color.DarkSalmon;
+            this.btnAddAccount.Location = new System.Drawing.Point(258, 199);
             this.btnAddAccount.Margin = new System.Windows.Forms.Padding(4);
             this.btnAddAccount.Name = "btnAddAccount";
             this.btnAddAccount.Size = new System.Drawing.Size(179, 39);
             this.btnAddAccount.TabIndex = 5;
             this.btnAddAccount.Text = "Thêm mới";
-            this.btnAddAccount.UseVisualStyleBackColor = true;
+            this.btnAddAccount.UseVisualStyleBackColor = false;
             this.btnAddAccount.Click += new System.EventHandler(this.btnAddAccount_Click);
             // 
             // panel17
@@ -1173,7 +1173,7 @@ namespace HighLandCF_Management
             this.panel9.Location = new System.Drawing.Point(4, 4);
             this.panel9.Margin = new System.Windows.Forms.Padding(4);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(353, 49);
+            this.panel9.Size = new System.Drawing.Size(275, 49);
             this.panel9.TabIndex = 0;
             // 
             // label3
@@ -1199,214 +1199,10 @@ namespace HighLandCF_Management
             this.txtNameAcount.TextChanged += new System.EventHandler(this.txtNameAcount_TextChanged);
             this.txtNameAcount.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNameAcount_KeyPress_1);
             // 
-            // tpOrder
-            // 
-            this.tpOrder.Controls.Add(this.label28);
-            this.tpOrder.Controls.Add(this.panel37);
-            this.tpOrder.Location = new System.Drawing.Point(4, 29);
-            this.tpOrder.Margin = new System.Windows.Forms.Padding(4);
-            this.tpOrder.Name = "tpOrder";
-            this.tpOrder.Padding = new System.Windows.Forms.Padding(4);
-            this.tpOrder.Size = new System.Drawing.Size(1343, 461);
-            this.tpOrder.TabIndex = 4;
-            this.tpOrder.Text = "Quản lý bàn";
-            this.tpOrder.UseVisualStyleBackColor = true;
-            // 
-            // label28
-            // 
-            this.label28.BackColor = System.Drawing.Color.LightPink;
-            this.label28.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label28.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label28.ForeColor = System.Drawing.Color.Maroon;
-            this.label28.Location = new System.Drawing.Point(4, 4);
-            this.label28.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(1335, 44);
-            this.label28.TabIndex = 12;
-            this.label28.Text = "QUẢN LÝ HỆ THỐNG BÀN";
-            this.label28.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // panel37
-            // 
-            this.panel37.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel37.Controls.Add(this.groupBox4);
-            this.panel37.Controls.Add(this.lstTable);
-            this.panel37.Location = new System.Drawing.Point(4, 50);
-            this.panel37.Margin = new System.Windows.Forms.Padding(4);
-            this.panel37.Name = "panel37";
-            this.panel37.Size = new System.Drawing.Size(1361, 518);
-            this.panel37.TabIndex = 4;
-            // 
-            // groupBox4
-            // 
-            this.groupBox4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox4.Controls.Add(this.panel41);
-            this.groupBox4.Location = new System.Drawing.Point(4, 0);
-            this.groupBox4.Margin = new System.Windows.Forms.Padding(4);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox4.Size = new System.Drawing.Size(1349, 81);
-            this.groupBox4.TabIndex = 11;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Thông tin bàn ";
-            // 
-            // panel41
-            // 
-            this.panel41.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel41.Controls.Add(this.btnCreateTable);
-            this.panel41.Controls.Add(this.btnNewTable);
-            this.panel41.Controls.Add(this.panel14);
-            this.panel41.Controls.Add(this.btnDeleteTable);
-            this.panel41.Controls.Add(this.panel44);
-            this.panel41.Location = new System.Drawing.Point(7, 21);
-            this.panel41.Margin = new System.Windows.Forms.Padding(4);
-            this.panel41.Name = "panel41";
-            this.panel41.Size = new System.Drawing.Size(1335, 52);
-            this.panel41.TabIndex = 5;
-            // 
-            // btnCreateTable
-            // 
-            this.btnCreateTable.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCreateTable.Location = new System.Drawing.Point(888, 7);
-            this.btnCreateTable.Margin = new System.Windows.Forms.Padding(4);
-            this.btnCreateTable.Name = "btnCreateTable";
-            this.btnCreateTable.Size = new System.Drawing.Size(156, 38);
-            this.btnCreateTable.TabIndex = 2;
-            this.btnCreateTable.Text = "Thêm bàn";
-            this.btnCreateTable.UseVisualStyleBackColor = true;
-            // 
-            // btnNewTable
-            // 
-            this.btnNewTable.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnNewTable.Location = new System.Drawing.Point(1201, 7);
-            this.btnNewTable.Margin = new System.Windows.Forms.Padding(4);
-            this.btnNewTable.Name = "btnNewTable";
-            this.btnNewTable.Size = new System.Drawing.Size(131, 38);
-            this.btnNewTable.TabIndex = 3;
-            this.btnNewTable.Text = "Làm mới";
-            this.btnNewTable.UseVisualStyleBackColor = true;
-            // 
-            // panel14
-            // 
-            this.panel14.Controls.Add(this.lblIDTable);
-            this.panel14.Controls.Add(this.txtIDTable);
-            this.panel14.Location = new System.Drawing.Point(13, 4);
-            this.panel14.Margin = new System.Windows.Forms.Padding(4);
-            this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(219, 46);
-            this.panel14.TabIndex = 7;
-            // 
-            // lblIDTable
-            // 
-            this.lblIDTable.AutoSize = true;
-            this.lblIDTable.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblIDTable.Location = new System.Drawing.Point(8, 12);
-            this.lblIDTable.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblIDTable.Name = "lblIDTable";
-            this.lblIDTable.Size = new System.Drawing.Size(76, 20);
-            this.lblIDTable.TabIndex = 1;
-            this.lblIDTable.Text = "Mã bàn:";
-            // 
-            // txtIDTable
-            // 
-            this.txtIDTable.Location = new System.Drawing.Point(101, 6);
-            this.txtIDTable.Margin = new System.Windows.Forms.Padding(4);
-            this.txtIDTable.Name = "txtIDTable";
-            this.txtIDTable.ReadOnly = true;
-            this.txtIDTable.Size = new System.Drawing.Size(97, 26);
-            this.txtIDTable.TabIndex = 0;
-            // 
-            // btnDeleteTable
-            // 
-            this.btnDeleteTable.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnDeleteTable.Enabled = false;
-            this.btnDeleteTable.Location = new System.Drawing.Point(1052, 7);
-            this.btnDeleteTable.Margin = new System.Windows.Forms.Padding(4);
-            this.btnDeleteTable.Name = "btnDeleteTable";
-            this.btnDeleteTable.Size = new System.Drawing.Size(141, 38);
-            this.btnDeleteTable.TabIndex = 1;
-            this.btnDeleteTable.Text = "Xóa bàn";
-            this.btnDeleteTable.UseVisualStyleBackColor = true;
-            // 
-            // panel44
-            // 
-            this.panel44.Controls.Add(this.label22);
-            this.panel44.Controls.Add(this.txtTableName);
-            this.panel44.Location = new System.Drawing.Point(240, 7);
-            this.panel44.Margin = new System.Windows.Forms.Padding(4);
-            this.panel44.Name = "panel44";
-            this.panel44.Size = new System.Drawing.Size(397, 44);
-            this.panel44.TabIndex = 6;
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(8, 11);
-            this.label22.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(82, 20);
-            this.label22.TabIndex = 1;
-            this.label22.Text = "Tên bàn:";
-            // 
-            // txtTableName
-            // 
-            this.txtTableName.Location = new System.Drawing.Point(115, 7);
-            this.txtTableName.Margin = new System.Windows.Forms.Padding(4);
-            this.txtTableName.Name = "txtTableName";
-            this.txtTableName.ShortcutsEnabled = false;
-            this.txtTableName.Size = new System.Drawing.Size(279, 26);
-            this.txtTableName.TabIndex = 0;
-            // 
-            // lstTable
-            // 
-            this.lstTable.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lstTable.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader10,
-            this.columnHeader11,
-            this.clBan,
-            this.columnHeader24});
-            this.lstTable.FullRowSelect = true;
-            this.lstTable.GridLines = true;
-            this.lstTable.HideSelection = false;
-            this.lstTable.Location = new System.Drawing.Point(5, 89);
-            this.lstTable.Margin = new System.Windows.Forms.Padding(4);
-            this.lstTable.Name = "lstTable";
-            this.lstTable.Size = new System.Drawing.Size(1349, 418);
-            this.lstTable.TabIndex = 9;
-            this.lstTable.UseCompatibleStateImageBehavior = false;
-            this.lstTable.View = System.Windows.Forms.View.Details;
-            // 
-            // columnHeader10
-            // 
-            this.columnHeader10.Text = "STT";
-            this.columnHeader10.Width = 87;
-            // 
-            // columnHeader11
-            // 
-            this.columnHeader11.DisplayIndex = 2;
-            this.columnHeader11.Text = "Tên bàn";
-            this.columnHeader11.Width = 282;
-            // 
-            // clBan
-            // 
-            this.clBan.DisplayIndex = 1;
-            this.clBan.Text = "Mã bàn";
-            this.clBan.Width = 100;
-            // 
-            // columnHeader24
-            // 
-            this.columnHeader24.Text = "Trạng thái";
-            this.columnHeader24.Width = 406;
-            // 
             // tpVatLieu
             // 
+            this.tpVatLieu.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.tpVatLieu.Controls.Add(this.pictureBox5);
             this.tpVatLieu.Controls.Add(this.groupBox7);
             this.tpVatLieu.Controls.Add(this.groupBox10);
             this.tpVatLieu.Controls.Add(this.label29);
@@ -1414,10 +1210,9 @@ namespace HighLandCF_Management
             this.tpVatLieu.Margin = new System.Windows.Forms.Padding(4);
             this.tpVatLieu.Name = "tpVatLieu";
             this.tpVatLieu.Padding = new System.Windows.Forms.Padding(4);
-            this.tpVatLieu.Size = new System.Drawing.Size(1343, 461);
+            this.tpVatLieu.Size = new System.Drawing.Size(1335, 692);
             this.tpVatLieu.TabIndex = 7;
             this.tpVatLieu.Text = "Quản lý nguyên vật liệu";
-            this.tpVatLieu.UseVisualStyleBackColor = true;
             // 
             // groupBox7
             // 
@@ -1432,7 +1227,7 @@ namespace HighLandCF_Management
             this.groupBox7.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox7.Name = "groupBox7";
             this.groupBox7.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox7.Size = new System.Drawing.Size(1371, 317);
+            this.groupBox7.Size = new System.Drawing.Size(1293, 317);
             this.groupBox7.TabIndex = 25;
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "Danh sách nguyên vật liệu";
@@ -1440,7 +1235,7 @@ namespace HighLandCF_Management
             // txtTongGiaNL
             // 
             this.txtTongGiaNL.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtTongGiaNL.Location = new System.Drawing.Point(1116, 276);
+            this.txtTongGiaNL.Location = new System.Drawing.Point(1038, 276);
             this.txtTongGiaNL.Margin = new System.Windows.Forms.Padding(4);
             this.txtTongGiaNL.Name = "txtTongGiaNL";
             this.txtTongGiaNL.ReadOnly = true;
@@ -1450,7 +1245,7 @@ namespace HighLandCF_Management
             // label9
             // 
             this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.label9.Location = new System.Drawing.Point(1005, 276);
+            this.label9.Location = new System.Drawing.Point(927, 276);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(103, 31);
@@ -1467,7 +1262,7 @@ namespace HighLandCF_Management
             this.panel22.Location = new System.Drawing.Point(7, 26);
             this.panel22.Margin = new System.Windows.Forms.Padding(4);
             this.panel22.Name = "panel22";
-            this.panel22.Size = new System.Drawing.Size(1357, 242);
+            this.panel22.Size = new System.Drawing.Size(1279, 242);
             this.panel22.TabIndex = 13;
             // 
             // lstNguyenLieu
@@ -1489,7 +1284,7 @@ namespace HighLandCF_Management
             this.lstNguyenLieu.Location = new System.Drawing.Point(5, 6);
             this.lstNguyenLieu.Margin = new System.Windows.Forms.Padding(4);
             this.lstNguyenLieu.Name = "lstNguyenLieu";
-            this.lstNguyenLieu.Size = new System.Drawing.Size(1345, 231);
+            this.lstNguyenLieu.Size = new System.Drawing.Size(1267, 231);
             this.lstNguyenLieu.TabIndex = 10;
             this.lstNguyenLieu.UseCompatibleStateImageBehavior = false;
             this.lstNguyenLieu.View = System.Windows.Forms.View.Details;
@@ -1535,7 +1330,7 @@ namespace HighLandCF_Management
             this.groupBox10.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox10.Name = "groupBox10";
             this.groupBox10.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox10.Size = new System.Drawing.Size(1364, 202);
+            this.groupBox10.Size = new System.Drawing.Size(1286, 202);
             this.groupBox10.TabIndex = 24;
             this.groupBox10.TabStop = false;
             this.groupBox10.Text = "Thông tin nguyên vật liệu";
@@ -1554,20 +1349,21 @@ namespace HighLandCF_Management
             this.panel23.Location = new System.Drawing.Point(7, 25);
             this.panel23.Margin = new System.Windows.Forms.Padding(4);
             this.panel23.Name = "panel23";
-            this.panel23.Size = new System.Drawing.Size(1349, 169);
+            this.panel23.Size = new System.Drawing.Size(1271, 169);
             this.panel23.TabIndex = 5;
             // 
             // btnXoaNL
             // 
             this.btnXoaNL.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.btnXoaNL.BackColor = System.Drawing.Color.DarkSalmon;
             this.btnXoaNL.Enabled = false;
-            this.btnXoaNL.Location = new System.Drawing.Point(1168, 62);
+            this.btnXoaNL.Location = new System.Drawing.Point(1090, 62);
             this.btnXoaNL.Margin = new System.Windows.Forms.Padding(4);
             this.btnXoaNL.Name = "btnXoaNL";
             this.btnXoaNL.Size = new System.Drawing.Size(176, 39);
             this.btnXoaNL.TabIndex = 23;
             this.btnXoaNL.Text = "Xóa nguyên liệu";
-            this.btnXoaNL.UseVisualStyleBackColor = true;
+            this.btnXoaNL.UseVisualStyleBackColor = false;
             this.btnXoaNL.Click += new System.EventHandler(this.btnXoaNL_Click);
             // 
             // panel42
@@ -1579,7 +1375,7 @@ namespace HighLandCF_Management
             this.panel42.Location = new System.Drawing.Point(5, 62);
             this.panel42.Margin = new System.Windows.Forms.Padding(4);
             this.panel42.Name = "panel42";
-            this.panel42.Size = new System.Drawing.Size(1155, 98);
+            this.panel42.Size = new System.Drawing.Size(1077, 98);
             this.panel42.TabIndex = 22;
             // 
             // label43
@@ -1602,7 +1398,7 @@ namespace HighLandCF_Management
             this.txtGhiChuNL.Multiline = true;
             this.txtGhiChuNL.Name = "txtGhiChuNL";
             this.txtGhiChuNL.ShortcutsEnabled = false;
-            this.txtGhiChuNL.Size = new System.Drawing.Size(1041, 85);
+            this.txtGhiChuNL.Size = new System.Drawing.Size(963, 85);
             this.txtGhiChuNL.TabIndex = 0;
             // 
             // panel35
@@ -1639,13 +1435,14 @@ namespace HighLandCF_Management
             // btnLamMoiNL
             // 
             this.btnLamMoiNL.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnLamMoiNL.Location = new System.Drawing.Point(1168, 116);
+            this.btnLamMoiNL.BackColor = System.Drawing.Color.DarkSalmon;
+            this.btnLamMoiNL.Location = new System.Drawing.Point(1090, 116);
             this.btnLamMoiNL.Margin = new System.Windows.Forms.Padding(4);
             this.btnLamMoiNL.Name = "btnLamMoiNL";
             this.btnLamMoiNL.Size = new System.Drawing.Size(176, 39);
             this.btnLamMoiNL.TabIndex = 19;
             this.btnLamMoiNL.Text = "Làm mới";
-            this.btnLamMoiNL.UseVisualStyleBackColor = true;
+            this.btnLamMoiNL.UseVisualStyleBackColor = false;
             this.btnLamMoiNL.Click += new System.EventHandler(this.btnLamMoiNL_Click);
             // 
             // panel31
@@ -1712,13 +1509,14 @@ namespace HighLandCF_Management
             // btnLuuNL
             // 
             this.btnLuuNL.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.btnLuuNL.Location = new System.Drawing.Point(1168, 9);
+            this.btnLuuNL.BackColor = System.Drawing.Color.DarkSalmon;
+            this.btnLuuNL.Location = new System.Drawing.Point(1090, 9);
             this.btnLuuNL.Margin = new System.Windows.Forms.Padding(4);
             this.btnLuuNL.Name = "btnLuuNL";
             this.btnLuuNL.Size = new System.Drawing.Size(176, 39);
             this.btnLuuNL.TabIndex = 20;
             this.btnLuuNL.Text = "Thêm mới";
-            this.btnLuuNL.UseVisualStyleBackColor = true;
+            this.btnLuuNL.UseVisualStyleBackColor = false;
             this.btnLuuNL.Click += new System.EventHandler(this.btnLuuNL_Click);
             // 
             // label29
@@ -1730,13 +1528,15 @@ namespace HighLandCF_Management
             this.label29.Location = new System.Drawing.Point(4, 4);
             this.label29.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(1335, 44);
+            this.label29.Size = new System.Drawing.Size(1327, 44);
             this.label29.TabIndex = 15;
             this.label29.Text = "QUẢN LÝ NGUYÊN VẬT LIỆU";
             this.label29.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // tpLoaiThucUong
             // 
+            this.tpLoaiThucUong.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.tpLoaiThucUong.Controls.Add(this.pictureBox4);
             this.tpLoaiThucUong.Controls.Add(this.label26);
             this.tpLoaiThucUong.Controls.Add(this.groupBox3);
             this.tpLoaiThucUong.Controls.Add(this.panel34);
@@ -1744,10 +1544,9 @@ namespace HighLandCF_Management
             this.tpLoaiThucUong.Margin = new System.Windows.Forms.Padding(4);
             this.tpLoaiThucUong.Name = "tpLoaiThucUong";
             this.tpLoaiThucUong.Padding = new System.Windows.Forms.Padding(4);
-            this.tpLoaiThucUong.Size = new System.Drawing.Size(1343, 461);
+            this.tpLoaiThucUong.Size = new System.Drawing.Size(1335, 692);
             this.tpLoaiThucUong.TabIndex = 2;
             this.tpLoaiThucUong.Text = "Quản lý loại sản phẩm";
-            this.tpLoaiThucUong.UseVisualStyleBackColor = true;
             // 
             // label26
             // 
@@ -1758,7 +1557,7 @@ namespace HighLandCF_Management
             this.label26.Location = new System.Drawing.Point(4, 4);
             this.label26.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(1335, 44);
+            this.label26.Size = new System.Drawing.Size(1327, 44);
             this.label26.TabIndex = 12;
             this.label26.Text = "QUẢN LÝ LOẠI SẢN PHẨM";
             this.label26.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1773,7 +1572,7 @@ namespace HighLandCF_Management
             this.groupBox3.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox3.Size = new System.Drawing.Size(1356, 153);
+            this.groupBox3.Size = new System.Drawing.Size(1278, 153);
             this.groupBox3.TabIndex = 6;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Thông tin loại sản phẩm";
@@ -1792,44 +1591,47 @@ namespace HighLandCF_Management
             this.panel36.Location = new System.Drawing.Point(7, 28);
             this.panel36.Margin = new System.Windows.Forms.Padding(4);
             this.panel36.Name = "panel36";
-            this.panel36.Size = new System.Drawing.Size(1337, 116);
+            this.panel36.Size = new System.Drawing.Size(1259, 116);
             this.panel36.TabIndex = 5;
             // 
             // btnNewType
             // 
             this.btnNewType.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnNewType.Location = new System.Drawing.Point(1032, 62);
+            this.btnNewType.BackColor = System.Drawing.Color.DarkSalmon;
+            this.btnNewType.Location = new System.Drawing.Point(942, 62);
             this.btnNewType.Margin = new System.Windows.Forms.Padding(4);
             this.btnNewType.Name = "btnNewType";
-            this.btnNewType.Size = new System.Drawing.Size(133, 42);
+            this.btnNewType.Size = new System.Drawing.Size(145, 42);
             this.btnNewType.TabIndex = 3;
             this.btnNewType.Text = "Làm mới";
-            this.btnNewType.UseVisualStyleBackColor = true;
+            this.btnNewType.UseVisualStyleBackColor = false;
             this.btnNewType.Click += new System.EventHandler(this.btnNewType_Click);
             // 
             // btnDeTypeProduct
             // 
             this.btnDeTypeProduct.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnDeTypeProduct.BackColor = System.Drawing.Color.DarkSalmon;
             this.btnDeTypeProduct.Enabled = false;
-            this.btnDeTypeProduct.Location = new System.Drawing.Point(1177, 62);
+            this.btnDeTypeProduct.Location = new System.Drawing.Point(1099, 62);
             this.btnDeTypeProduct.Margin = new System.Windows.Forms.Padding(4);
             this.btnDeTypeProduct.Name = "btnDeTypeProduct";
             this.btnDeTypeProduct.Size = new System.Drawing.Size(145, 42);
             this.btnDeTypeProduct.TabIndex = 1;
             this.btnDeTypeProduct.Text = "Xóa loại";
-            this.btnDeTypeProduct.UseVisualStyleBackColor = true;
+            this.btnDeTypeProduct.UseVisualStyleBackColor = false;
             this.btnDeTypeProduct.Click += new System.EventHandler(this.btnDeTypeProduct_Click);
             // 
             // btnAddTypeProduct
             // 
             this.btnAddTypeProduct.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnAddTypeProduct.Location = new System.Drawing.Point(1020, 9);
+            this.btnAddTypeProduct.BackColor = System.Drawing.Color.DarkSalmon;
+            this.btnAddTypeProduct.Location = new System.Drawing.Point(942, 9);
             this.btnAddTypeProduct.Margin = new System.Windows.Forms.Padding(4);
             this.btnAddTypeProduct.Name = "btnAddTypeProduct";
             this.btnAddTypeProduct.Size = new System.Drawing.Size(145, 42);
             this.btnAddTypeProduct.TabIndex = 0;
             this.btnAddTypeProduct.Text = "Thêm mới";
-            this.btnAddTypeProduct.UseVisualStyleBackColor = true;
+            this.btnAddTypeProduct.UseVisualStyleBackColor = false;
             this.btnAddTypeProduct.Click += new System.EventHandler(this.btnAddTypeProduct_Click);
             // 
             // panel4
@@ -1858,7 +1660,7 @@ namespace HighLandCF_Management
             // radAnType
             // 
             this.radAnType.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.radAnType.Location = new System.Drawing.Point(187, 6);
+            this.radAnType.Location = new System.Drawing.Point(187, 11);
             this.radAnType.Margin = new System.Windows.Forms.Padding(4);
             this.radAnType.Name = "radAnType";
             this.radAnType.Size = new System.Drawing.Size(96, 34);
@@ -1869,13 +1671,14 @@ namespace HighLandCF_Management
             // btnEditTypeProduct
             // 
             this.btnEditTypeProduct.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnEditTypeProduct.Location = new System.Drawing.Point(1177, 9);
+            this.btnEditTypeProduct.BackColor = System.Drawing.Color.DarkSalmon;
+            this.btnEditTypeProduct.Location = new System.Drawing.Point(1099, 9);
             this.btnEditTypeProduct.Margin = new System.Windows.Forms.Padding(4);
             this.btnEditTypeProduct.Name = "btnEditTypeProduct";
             this.btnEditTypeProduct.Size = new System.Drawing.Size(145, 42);
             this.btnEditTypeProduct.TabIndex = 2;
             this.btnEditTypeProduct.Text = "Chỉnh sửa";
-            this.btnEditTypeProduct.UseVisualStyleBackColor = true;
+            this.btnEditTypeProduct.UseVisualStyleBackColor = false;
             this.btnEditTypeProduct.Click += new System.EventHandler(this.btnEditTypeProduct_Click);
             // 
             // panel39
@@ -1949,7 +1752,7 @@ namespace HighLandCF_Management
             this.panel34.Location = new System.Drawing.Point(4, 210);
             this.panel34.Margin = new System.Windows.Forms.Padding(4);
             this.panel34.Name = "panel34";
-            this.panel34.Size = new System.Drawing.Size(1356, 358);
+            this.panel34.Size = new System.Drawing.Size(1278, 358);
             this.panel34.TabIndex = 4;
             // 
             // lstTypeProduct
@@ -1969,7 +1772,7 @@ namespace HighLandCF_Management
             this.lstTypeProduct.Location = new System.Drawing.Point(0, 4);
             this.lstTypeProduct.Margin = new System.Windows.Forms.Padding(4);
             this.lstTypeProduct.Name = "lstTypeProduct";
-            this.lstTypeProduct.Size = new System.Drawing.Size(1348, 349);
+            this.lstTypeProduct.Size = new System.Drawing.Size(1270, 410);
             this.lstTypeProduct.TabIndex = 0;
             this.lstTypeProduct.UseCompatibleStateImageBehavior = false;
             this.lstTypeProduct.View = System.Windows.Forms.View.Details;
@@ -2000,6 +1803,8 @@ namespace HighLandCF_Management
             // 
             // tpThucUong
             // 
+            this.tpThucUong.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.tpThucUong.Controls.Add(this.pictureBox2);
             this.tpThucUong.Controls.Add(this.label25);
             this.tpThucUong.Controls.Add(this.groupBox2);
             this.tpThucUong.Controls.Add(this.panel3);
@@ -2007,10 +1812,9 @@ namespace HighLandCF_Management
             this.tpThucUong.Margin = new System.Windows.Forms.Padding(4);
             this.tpThucUong.Name = "tpThucUong";
             this.tpThucUong.Padding = new System.Windows.Forms.Padding(4);
-            this.tpThucUong.Size = new System.Drawing.Size(1343, 461);
+            this.tpThucUong.Size = new System.Drawing.Size(1335, 692);
             this.tpThucUong.TabIndex = 1;
             this.tpThucUong.Text = "Quản lý sản phẩm";
-            this.tpThucUong.UseVisualStyleBackColor = true;
             // 
             // label25
             // 
@@ -2021,7 +1825,7 @@ namespace HighLandCF_Management
             this.label25.Location = new System.Drawing.Point(4, 4);
             this.label25.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(1335, 44);
+            this.label25.Size = new System.Drawing.Size(1327, 44);
             this.label25.TabIndex = 13;
             this.label25.Text = "QUẢN LÝ SẢN PHẨM";
             this.label25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2043,7 +1847,7 @@ namespace HighLandCF_Management
             this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox2.Size = new System.Drawing.Size(1363, 135);
+            this.groupBox2.Size = new System.Drawing.Size(1285, 135);
             this.groupBox2.TabIndex = 0;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Thông tin sản phẩm";
@@ -2057,7 +1861,7 @@ namespace HighLandCF_Management
             this.panel21.Location = new System.Drawing.Point(807, 21);
             this.panel21.Margin = new System.Windows.Forms.Padding(4);
             this.panel21.Name = "panel21";
-            this.panel21.Size = new System.Drawing.Size(541, 49);
+            this.panel21.Size = new System.Drawing.Size(463, 49);
             this.panel21.TabIndex = 4;
             // 
             // label13
@@ -2079,7 +1883,7 @@ namespace HighLandCF_Management
             this.txtPriceProduct.Margin = new System.Windows.Forms.Padding(4);
             this.txtPriceProduct.Name = "txtPriceProduct";
             this.txtPriceProduct.ShortcutsEnabled = false;
-            this.txtPriceProduct.Size = new System.Drawing.Size(467, 26);
+            this.txtPriceProduct.Size = new System.Drawing.Size(389, 26);
             this.txtPriceProduct.TabIndex = 1;
             // 
             // panel19
@@ -2145,38 +1949,41 @@ namespace HighLandCF_Management
             // btnDeProduct
             // 
             this.btnDeProduct.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnDeProduct.BackColor = System.Drawing.Color.DarkSalmon;
             this.btnDeProduct.Enabled = false;
-            this.btnDeProduct.Location = new System.Drawing.Point(1191, 84);
+            this.btnDeProduct.Location = new System.Drawing.Point(1113, 84);
             this.btnDeProduct.Margin = new System.Windows.Forms.Padding(4);
             this.btnDeProduct.Name = "btnDeProduct";
             this.btnDeProduct.Size = new System.Drawing.Size(163, 41);
             this.btnDeProduct.TabIndex = 1;
             this.btnDeProduct.Text = "Xóa sản phẩm";
-            this.btnDeProduct.UseVisualStyleBackColor = true;
+            this.btnDeProduct.UseVisualStyleBackColor = false;
             this.btnDeProduct.Click += new System.EventHandler(this.btnDeProduct_Click);
             // 
             // btnEditProduct
             // 
             this.btnEditProduct.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnEditProduct.Location = new System.Drawing.Point(1064, 85);
+            this.btnEditProduct.BackColor = System.Drawing.Color.DarkSalmon;
+            this.btnEditProduct.Location = new System.Drawing.Point(986, 85);
             this.btnEditProduct.Margin = new System.Windows.Forms.Padding(4);
             this.btnEditProduct.Name = "btnEditProduct";
             this.btnEditProduct.Size = new System.Drawing.Size(111, 43);
             this.btnEditProduct.TabIndex = 0;
             this.btnEditProduct.Text = "Chỉnh sửa";
-            this.btnEditProduct.UseVisualStyleBackColor = true;
+            this.btnEditProduct.UseVisualStyleBackColor = false;
             this.btnEditProduct.Click += new System.EventHandler(this.btnEditProduct_Click);
             // 
             // btnAddProduct
             // 
             this.btnAddProduct.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnAddProduct.Location = new System.Drawing.Point(1064, 84);
+            this.btnAddProduct.BackColor = System.Drawing.Color.DarkSalmon;
+            this.btnAddProduct.Location = new System.Drawing.Point(986, 84);
             this.btnAddProduct.Margin = new System.Windows.Forms.Padding(4);
             this.btnAddProduct.Name = "btnAddProduct";
             this.btnAddProduct.Size = new System.Drawing.Size(109, 41);
             this.btnAddProduct.TabIndex = 0;
             this.btnAddProduct.Text = "Thêm mới";
-            this.btnAddProduct.UseVisualStyleBackColor = true;
+            this.btnAddProduct.UseVisualStyleBackColor = false;
             this.btnAddProduct.Click += new System.EventHandler(this.btnAddProduct_Click);
             // 
             // panel27
@@ -2270,7 +2077,7 @@ namespace HighLandCF_Management
             this.panel3.Location = new System.Drawing.Point(4, 194);
             this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1365, 374);
+            this.panel3.Size = new System.Drawing.Size(1287, 374);
             this.panel3.TabIndex = 0;
             // 
             // cbLocLoaiSP
@@ -2287,13 +2094,14 @@ namespace HighLandCF_Management
             // btnWatchProduct
             // 
             this.btnWatchProduct.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnWatchProduct.Location = new System.Drawing.Point(1189, 10);
+            this.btnWatchProduct.BackColor = System.Drawing.Color.DarkSalmon;
+            this.btnWatchProduct.Location = new System.Drawing.Point(1111, 10);
             this.btnWatchProduct.Margin = new System.Windows.Forms.Padding(4);
             this.btnWatchProduct.Name = "btnWatchProduct";
             this.btnWatchProduct.Size = new System.Drawing.Size(163, 38);
             this.btnWatchProduct.TabIndex = 2;
             this.btnWatchProduct.Text = "Làm mới";
-            this.btnWatchProduct.UseVisualStyleBackColor = true;
+            this.btnWatchProduct.UseVisualStyleBackColor = false;
             this.btnWatchProduct.Click += new System.EventHandler(this.btnWatchProduct_Click);
             // 
             // label19
@@ -2311,7 +2119,7 @@ namespace HighLandCF_Management
             // 
             this.label24.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(677, 16);
+            this.label24.Location = new System.Drawing.Point(599, 16);
             this.label24.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(73, 20);
@@ -2321,7 +2129,7 @@ namespace HighLandCF_Management
             // txtSearchProduct
             // 
             this.txtSearchProduct.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtSearchProduct.Location = new System.Drawing.Point(768, 12);
+            this.txtSearchProduct.Location = new System.Drawing.Point(690, 12);
             this.txtSearchProduct.Margin = new System.Windows.Forms.Padding(4);
             this.txtSearchProduct.Name = "txtSearchProduct";
             this.txtSearchProduct.ShortcutsEnabled = false;
@@ -2331,13 +2139,14 @@ namespace HighLandCF_Management
             // btnSearchProduct
             // 
             this.btnSearchProduct.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSearchProduct.Location = new System.Drawing.Point(1013, 10);
+            this.btnSearchProduct.BackColor = System.Drawing.Color.DarkSalmon;
+            this.btnSearchProduct.Location = new System.Drawing.Point(935, 10);
             this.btnSearchProduct.Margin = new System.Windows.Forms.Padding(4);
             this.btnSearchProduct.Name = "btnSearchProduct";
             this.btnSearchProduct.Size = new System.Drawing.Size(163, 38);
             this.btnSearchProduct.TabIndex = 2;
             this.btnSearchProduct.Text = "Tìm kiếm";
-            this.btnSearchProduct.UseVisualStyleBackColor = true;
+            this.btnSearchProduct.UseVisualStyleBackColor = false;
             this.btnSearchProduct.Click += new System.EventHandler(this.btnSearchProduct_Click);
             // 
             // lstProduct
@@ -2360,7 +2169,7 @@ namespace HighLandCF_Management
             this.lstProduct.Location = new System.Drawing.Point(4, 55);
             this.lstProduct.Margin = new System.Windows.Forms.Padding(4);
             this.lstProduct.Name = "lstProduct";
-            this.lstProduct.Size = new System.Drawing.Size(1355, 313);
+            this.lstProduct.Size = new System.Drawing.Size(1277, 411);
             this.lstProduct.TabIndex = 3;
             this.lstProduct.UseCompatibleStateImageBehavior = false;
             this.lstProduct.View = System.Windows.Forms.View.Details;
@@ -2404,6 +2213,7 @@ namespace HighLandCF_Management
             // tpDoanhThu
             // 
             this.tpDoanhThu.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.tpDoanhThu.Controls.Add(this.pictureBox1);
             this.tpDoanhThu.Controls.Add(this.txtTongDoanhThu);
             this.tpDoanhThu.Controls.Add(this.label6);
             this.tpDoanhThu.Controls.Add(this.lstDoanhThu);
@@ -2412,14 +2222,14 @@ namespace HighLandCF_Management
             this.tpDoanhThu.Location = new System.Drawing.Point(4, 29);
             this.tpDoanhThu.Margin = new System.Windows.Forms.Padding(4);
             this.tpDoanhThu.Name = "tpDoanhThu";
-            this.tpDoanhThu.Size = new System.Drawing.Size(1343, 461);
+            this.tpDoanhThu.Size = new System.Drawing.Size(1335, 692);
             this.tpDoanhThu.TabIndex = 9;
             this.tpDoanhThu.Text = "Báo cáo doanh thu";
             // 
             // txtTongDoanhThu
             // 
             this.txtTongDoanhThu.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtTongDoanhThu.Location = new System.Drawing.Point(1085, 391);
+            this.txtTongDoanhThu.Location = new System.Drawing.Point(975, 617);
             this.txtTongDoanhThu.Margin = new System.Windows.Forms.Padding(4);
             this.txtTongDoanhThu.Name = "txtTongDoanhThu";
             this.txtTongDoanhThu.ReadOnly = true;
@@ -2429,7 +2239,7 @@ namespace HighLandCF_Management
             // label6
             // 
             this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.label6.Location = new System.Drawing.Point(860, 385);
+            this.label6.Location = new System.Drawing.Point(759, 608);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(217, 44);
@@ -2457,7 +2267,7 @@ namespace HighLandCF_Management
             this.lstDoanhThu.Location = new System.Drawing.Point(11, 150);
             this.lstDoanhThu.Margin = new System.Windows.Forms.Padding(4);
             this.lstDoanhThu.Name = "lstDoanhThu";
-            this.lstDoanhThu.Size = new System.Drawing.Size(1320, 227);
+            this.lstDoanhThu.Size = new System.Drawing.Size(1242, 454);
             this.lstDoanhThu.TabIndex = 24;
             this.lstDoanhThu.UseCompatibleStateImageBehavior = false;
             this.lstDoanhThu.View = System.Windows.Forms.View.Details;
@@ -2507,7 +2317,7 @@ namespace HighLandCF_Management
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox1.Size = new System.Drawing.Size(1321, 94);
+            this.groupBox1.Size = new System.Drawing.Size(1243, 94);
             this.groupBox1.TabIndex = 23;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin lọc dữ liệu";
@@ -2526,7 +2336,7 @@ namespace HighLandCF_Management
             this.panel5.Location = new System.Drawing.Point(8, 30);
             this.panel5.Margin = new System.Windows.Forms.Padding(4);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1307, 53);
+            this.panel5.Size = new System.Drawing.Size(1229, 53);
             this.panel5.TabIndex = 5;
             // 
             // cbxToMonth
@@ -2575,37 +2385,40 @@ namespace HighLandCF_Management
             // button5
             // 
             this.button5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button5.Location = new System.Drawing.Point(893, 6);
+            this.button5.BackColor = System.Drawing.Color.DarkSalmon;
+            this.button5.Location = new System.Drawing.Point(815, 6);
             this.button5.Margin = new System.Windows.Forms.Padding(4);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(87, 39);
             this.button5.TabIndex = 23;
             this.button5.Text = "Xem";
-            this.button5.UseVisualStyleBackColor = true;
+            this.button5.UseVisualStyleBackColor = false;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button4
             // 
             this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button4.Location = new System.Drawing.Point(1164, 5);
+            this.button4.BackColor = System.Drawing.Color.DarkSalmon;
+            this.button4.Location = new System.Drawing.Point(1086, 5);
             this.button4.Margin = new System.Windows.Forms.Padding(4);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(131, 39);
             this.button4.TabIndex = 22;
             this.button4.Text = "Làm mới";
-            this.button4.UseVisualStyleBackColor = true;
+            this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button2
             // 
             this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button2.Location = new System.Drawing.Point(988, 6);
+            this.button2.BackColor = System.Drawing.Color.DarkSalmon;
+            this.button2.Location = new System.Drawing.Point(910, 6);
             this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(169, 39);
             this.button2.TabIndex = 21;
             this.button2.Text = "Xuất báo cáo";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // label8
@@ -2618,7 +2431,7 @@ namespace HighLandCF_Management
             this.label8.Location = new System.Drawing.Point(4, 4);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(1333, 44);
+            this.label8.Size = new System.Drawing.Size(1255, 44);
             this.label8.TabIndex = 15;
             this.label8.Text = "QUẢN LÝ BÁO CÁO DOANH THU";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2626,6 +2439,7 @@ namespace HighLandCF_Management
             // tpBaoCaoBill
             // 
             this.tpBaoCaoBill.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.tpBaoCaoBill.Controls.Add(this.pictureBox3);
             this.tpBaoCaoBill.Controls.Add(this.txtReportTotal);
             this.tpBaoCaoBill.Controls.Add(this.label5);
             this.tpBaoCaoBill.Controls.Add(this.groupBox6);
@@ -2635,14 +2449,15 @@ namespace HighLandCF_Management
             this.tpBaoCaoBill.Margin = new System.Windows.Forms.Padding(4);
             this.tpBaoCaoBill.Name = "tpBaoCaoBill";
             this.tpBaoCaoBill.Padding = new System.Windows.Forms.Padding(4);
-            this.tpBaoCaoBill.Size = new System.Drawing.Size(1343, 461);
+            this.tpBaoCaoBill.Size = new System.Drawing.Size(1335, 692);
             this.tpBaoCaoBill.TabIndex = 0;
             this.tpBaoCaoBill.Text = "Báo cáo hóa đơn";
+            this.tpBaoCaoBill.Click += new System.EventHandler(this.tpBaoCaoBill_Click);
             // 
             // txtReportTotal
             // 
             this.txtReportTotal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtReportTotal.Location = new System.Drawing.Point(1085, 388);
+            this.txtReportTotal.Location = new System.Drawing.Point(995, 568);
             this.txtReportTotal.Margin = new System.Windows.Forms.Padding(4);
             this.txtReportTotal.Name = "txtReportTotal";
             this.txtReportTotal.ReadOnly = true;
@@ -2652,7 +2467,7 @@ namespace HighLandCF_Management
             // label5
             // 
             this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.label5.Location = new System.Drawing.Point(975, 382);
+            this.label5.Location = new System.Drawing.Point(891, 558);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(103, 46);
@@ -2670,7 +2485,7 @@ namespace HighLandCF_Management
             this.groupBox6.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox6.Size = new System.Drawing.Size(1325, 95);
+            this.groupBox6.Size = new System.Drawing.Size(1247, 95);
             this.groupBox6.TabIndex = 11;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Thông tin lọc dữ liệu";
@@ -2689,31 +2504,33 @@ namespace HighLandCF_Management
             this.panel2.Location = new System.Drawing.Point(8, 31);
             this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1309, 57);
+            this.panel2.Size = new System.Drawing.Size(1231, 57);
             this.panel2.TabIndex = 0;
             // 
             // button3
             // 
             this.button3.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.button3.Location = new System.Drawing.Point(833, 10);
+            this.button3.BackColor = System.Drawing.Color.DarkSalmon;
+            this.button3.Location = new System.Drawing.Point(755, 10);
             this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(115, 36);
             this.button3.TabIndex = 6;
             this.button3.Text = "Xem";
-            this.button3.UseVisualStyleBackColor = true;
+            this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button1
             // 
             this.button1.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.button1.Location = new System.Drawing.Point(1209, 10);
+            this.button1.BackColor = System.Drawing.Color.DarkSalmon;
+            this.button1.Location = new System.Drawing.Point(1131, 10);
             this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(93, 36);
             this.button1.TabIndex = 1;
             this.button1.Text = "Thoát";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // dtpToDate
@@ -2733,13 +2550,14 @@ namespace HighLandCF_Management
             // btnThongKe
             // 
             this.btnThongKe.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.btnThongKe.Location = new System.Drawing.Point(957, 10);
+            this.btnThongKe.BackColor = System.Drawing.Color.DarkSalmon;
+            this.btnThongKe.Location = new System.Drawing.Point(879, 10);
             this.btnThongKe.Margin = new System.Windows.Forms.Padding(4);
             this.btnThongKe.Name = "btnThongKe";
             this.btnThongKe.Size = new System.Drawing.Size(245, 36);
             this.btnThongKe.TabIndex = 0;
             this.btnThongKe.Text = "Xuất báo cáo/thống kế";
-            this.btnThongKe.UseVisualStyleBackColor = true;
+            this.btnThongKe.UseVisualStyleBackColor = false;
             this.btnThongKe.Click += new System.EventHandler(this.btnThongKe_Click);
             // 
             // label17
@@ -2787,7 +2605,7 @@ namespace HighLandCF_Management
             this.label18.Location = new System.Drawing.Point(4, 4);
             this.label18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(1335, 44);
+            this.label18.Size = new System.Drawing.Size(1327, 44);
             this.label18.TabIndex = 12;
             this.label18.Text = "QUẢN LÝ BÁO CÁO - THỐNG KÊ";
             this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2801,7 +2619,7 @@ namespace HighLandCF_Management
             this.panel1.Location = new System.Drawing.Point(4, 151);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1333, 218);
+            this.panel1.Size = new System.Drawing.Size(1255, 403);
             this.panel1.TabIndex = 2;
             // 
             // lstRevenue
@@ -2826,7 +2644,7 @@ namespace HighLandCF_Management
             this.lstRevenue.Location = new System.Drawing.Point(7, 6);
             this.lstRevenue.Margin = new System.Windows.Forms.Padding(4);
             this.lstRevenue.Name = "lstRevenue";
-            this.lstRevenue.Size = new System.Drawing.Size(1320, 207);
+            this.lstRevenue.Size = new System.Drawing.Size(1242, 377);
             this.lstRevenue.TabIndex = 10;
             this.lstRevenue.UseCompatibleStateImageBehavior = false;
             this.lstRevenue.View = System.Windows.Forms.View.Details;
@@ -2885,7 +2703,6 @@ namespace HighLandCF_Management
             this.radAdminAccount.Controls.Add(this.tpThucUong);
             this.radAdminAccount.Controls.Add(this.tpLoaiThucUong);
             this.radAdminAccount.Controls.Add(this.tpVatLieu);
-            this.radAdminAccount.Controls.Add(this.tpOrder);
             this.radAdminAccount.Controls.Add(this.tpTaiKhoan);
             this.radAdminAccount.Controls.Add(this.tpNhanVien);
             this.radAdminAccount.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -2894,21 +2711,93 @@ namespace HighLandCF_Management
             this.radAdminAccount.Margin = new System.Windows.Forms.Padding(4);
             this.radAdminAccount.Name = "radAdminAccount";
             this.radAdminAccount.SelectedIndex = 0;
-            this.radAdminAccount.Size = new System.Drawing.Size(1421, 725);
+            this.radAdminAccount.Size = new System.Drawing.Size(1343, 725);
             this.radAdminAccount.TabIndex = 3;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(3, 5);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(66, 43);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 16;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(75, 45);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 27;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(4, 4);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(72, 44);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 14;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Location = new System.Drawing.Point(4, 3);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(75, 45);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 13;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
+            this.pictureBox5.Location = new System.Drawing.Point(4, 4);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(78, 44);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox5.TabIndex = 26;
+            this.pictureBox5.TabStop = false;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
+            this.pictureBox6.Location = new System.Drawing.Point(4, 4);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(67, 44);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox6.TabIndex = 3;
+            this.pictureBox6.TabStop = false;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
+            this.pictureBox7.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(70, 45);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox7.TabIndex = 24;
+            this.pictureBox7.TabStop = false;
             // 
             // frm_QuanLyHeThong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1421, 725);
+            this.ClientSize = new System.Drawing.Size(1343, 725);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.radAdminAccount);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frm_QuanLyHeThong";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Quản Lý Hệ Thống";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frm_QuanLyHeThong_Load);
             this.tpNhanVien.ResumeLayout(false);
             this.groupBox9.ResumeLayout(false);
@@ -2942,14 +2831,6 @@ namespace HighLandCF_Management
             this.panel8.PerformLayout();
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
-            this.tpOrder.ResumeLayout(false);
-            this.panel37.ResumeLayout(false);
-            this.groupBox4.ResumeLayout(false);
-            this.panel41.ResumeLayout(false);
-            this.panel14.ResumeLayout(false);
-            this.panel14.PerformLayout();
-            this.panel44.ResumeLayout(false);
-            this.panel44.PerformLayout();
             this.tpVatLieu.ResumeLayout(false);
             this.groupBox7.ResumeLayout(false);
             this.groupBox7.PerformLayout();
@@ -2997,6 +2878,13 @@ namespace HighLandCF_Management
             this.panel2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.radAdminAccount.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -3086,25 +2974,6 @@ namespace HighLandCF_Management
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtNameAcount;
-        private System.Windows.Forms.TabPage tpOrder;
-        private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.Panel panel37;
-        private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.Panel panel41;
-        private System.Windows.Forms.Button btnCreateTable;
-        private System.Windows.Forms.Button btnNewTable;
-        private System.Windows.Forms.Panel panel14;
-        private System.Windows.Forms.Label lblIDTable;
-        private System.Windows.Forms.TextBox txtIDTable;
-        private System.Windows.Forms.Button btnDeleteTable;
-        private System.Windows.Forms.Panel panel44;
-        private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.TextBox txtTableName;
-        private System.Windows.Forms.ListView lstTable;
-        private System.Windows.Forms.ColumnHeader columnHeader10;
-        private System.Windows.Forms.ColumnHeader columnHeader11;
-        private System.Windows.Forms.ColumnHeader clBan;
-        private System.Windows.Forms.ColumnHeader columnHeader24;
         private System.Windows.Forms.TabPage tpVatLieu;
         private System.Windows.Forms.GroupBox groupBox7;
         private System.Windows.Forms.TextBox txtTongGiaNL;
@@ -3241,5 +3110,12 @@ namespace HighLandCF_Management
         private System.Windows.Forms.ColumnHeader columnHeader22;
         private System.Windows.Forms.ColumnHeader columnHeader23;
         private System.Windows.Forms.TabControl radAdminAccount;
+        private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox3;
     }
 }

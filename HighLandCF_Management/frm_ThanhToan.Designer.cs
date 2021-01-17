@@ -30,6 +30,7 @@ namespace HighLandCF_Management
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_ThanhToan));
             this.txtMaHD = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
@@ -53,6 +54,8 @@ namespace HighLandCF_Management
             this.label1 = new System.Windows.Forms.Label();
             this.btnXuatHD = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.SuspendLayout();
             // 
             // txtMaHD
@@ -149,14 +152,15 @@ namespace HighLandCF_Management
             // txtHuy
             // 
             this.txtHuy.AllowDrop = true;
+            this.txtHuy.BackColor = System.Drawing.Color.DarkSalmon;
             this.txtHuy.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtHuy.Location = new System.Drawing.Point(400, 379);
-            this.txtHuy.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtHuy.Margin = new System.Windows.Forms.Padding(4);
             this.txtHuy.Name = "txtHuy";
             this.txtHuy.Size = new System.Drawing.Size(87, 49);
             this.txtHuy.TabIndex = 28;
             this.txtHuy.Text = "Hủy";
-            this.txtHuy.UseVisualStyleBackColor = true;
+            this.txtHuy.UseVisualStyleBackColor = false;
             this.txtHuy.Click += new System.EventHandler(this.txtHuy_Click);
             // 
             // txtTienTon
@@ -165,7 +169,7 @@ namespace HighLandCF_Management
             this.txtTienTon.Enabled = false;
             this.txtTienTon.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTienTon.Location = new System.Drawing.Point(235, 247);
-            this.txtTienTon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTienTon.Margin = new System.Windows.Forms.Padding(4);
             this.txtTienTon.Name = "txtTienTon";
             this.txtTienTon.ShortcutsEnabled = false;
             this.txtTienTon.Size = new System.Drawing.Size(252, 32);
@@ -179,7 +183,7 @@ namespace HighLandCF_Management
             this.txtThanhTien.Enabled = false;
             this.txtThanhTien.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtThanhTien.Location = new System.Drawing.Point(235, 327);
-            this.txtThanhTien.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtThanhTien.Margin = new System.Windows.Forms.Padding(4);
             this.txtThanhTien.Name = "txtThanhTien";
             this.txtThanhTien.ShortcutsEnabled = false;
             this.txtThanhTien.Size = new System.Drawing.Size(252, 32);
@@ -193,7 +197,7 @@ namespace HighLandCF_Management
             this.txtTongTien.Enabled = false;
             this.txtTongTien.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTongTien.Location = new System.Drawing.Point(235, 207);
-            this.txtTongTien.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTongTien.Margin = new System.Windows.Forms.Padding(4);
             this.txtTongTien.Name = "txtTongTien";
             this.txtTongTien.ShortcutsEnabled = false;
             this.txtTongTien.Size = new System.Drawing.Size(252, 32);
@@ -207,7 +211,7 @@ namespace HighLandCF_Management
             this.txtPromotion.AllowDrop = true;
             this.txtPromotion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPromotion.Location = new System.Drawing.Point(235, 288);
-            this.txtPromotion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPromotion.Margin = new System.Windows.Forms.Padding(4);
             this.txtPromotion.Name = "txtPromotion";
             this.txtPromotion.ShortcutsEnabled = false;
             this.txtPromotion.Size = new System.Drawing.Size(252, 32);
@@ -220,7 +224,7 @@ namespace HighLandCF_Management
             this.txtSTK.AllowDrop = true;
             this.txtSTK.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSTK.Location = new System.Drawing.Point(235, 166);
-            this.txtSTK.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtSTK.Margin = new System.Windows.Forms.Padding(4);
             this.txtSTK.Name = "txtSTK";
             this.txtSTK.ShortcutsEnabled = false;
             this.txtSTK.Size = new System.Drawing.Size(252, 32);
@@ -305,14 +309,15 @@ namespace HighLandCF_Management
             // btnXuatHD
             // 
             this.btnXuatHD.AllowDrop = true;
+            this.btnXuatHD.BackColor = System.Drawing.Color.DarkSalmon;
             this.btnXuatHD.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnXuatHD.Location = new System.Drawing.Point(123, 379);
-            this.btnXuatHD.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnXuatHD.Margin = new System.Windows.Forms.Padding(4);
             this.btnXuatHD.Name = "btnXuatHD";
             this.btnXuatHD.Size = new System.Drawing.Size(164, 49);
             this.btnXuatHD.TabIndex = 27;
             this.btnXuatHD.Text = "Xuất hóa đơn";
-            this.btnXuatHD.UseVisualStyleBackColor = true;
+            this.btnXuatHD.UseVisualStyleBackColor = false;
             this.btnXuatHD.Click += new System.EventHandler(this.btnXuatHD_Click);
             // 
             // label3
@@ -330,12 +335,24 @@ namespace HighLandCF_Management
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
+            // pictureBox7
+            // 
+            this.pictureBox7.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
+            this.pictureBox7.Location = new System.Drawing.Point(-5, 0);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(79, 45);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox7.TabIndex = 44;
+            this.pictureBox7.TabStop = false;
+            // 
             // frm_ThanhToan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(593, 441);
+            this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.txtMaHD);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label11);
@@ -363,6 +380,7 @@ namespace HighLandCF_Management
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Thanh Toán";
             this.Load += new System.EventHandler(this.frm_ThanhToan_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -393,5 +411,6 @@ namespace HighLandCF_Management
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnXuatHD;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.PictureBox pictureBox7;
     }
 }

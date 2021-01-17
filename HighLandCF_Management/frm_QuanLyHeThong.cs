@@ -1469,6 +1469,10 @@ namespace HighLandCF_Management
 
 
         private void txtNameAcount_KeyPress_1(object sender, KeyPressEventArgs e) => TxtKeyPress_Number(sender, e);
-        
+
+        private void tpBaoCaoBill_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

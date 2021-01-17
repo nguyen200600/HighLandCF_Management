@@ -29,6 +29,7 @@ namespace HighLandCF_Management
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_LayLaiMatKhau));
             this.label23 = new System.Windows.Forms.Label();
             this.lblThongBao = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -47,11 +48,13 @@ namespace HighLandCF_Management
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label23
@@ -152,24 +155,26 @@ namespace HighLandCF_Management
             // 
             // btn_Huy
             // 
+            this.btn_Huy.BackColor = System.Drawing.Color.DarkSalmon;
             this.btn_Huy.Location = new System.Drawing.Point(342, 279);
             this.btn_Huy.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Huy.Name = "btn_Huy";
             this.btn_Huy.Size = new System.Drawing.Size(107, 46);
             this.btn_Huy.TabIndex = 6;
             this.btn_Huy.Text = "Hủy";
-            this.btn_Huy.UseVisualStyleBackColor = true;
+            this.btn_Huy.UseVisualStyleBackColor = false;
             this.btn_Huy.Click += new System.EventHandler(this.btn_Huy_Click);
             // 
             // btnChange
             // 
+            this.btnChange.BackColor = System.Drawing.Color.DarkSalmon;
             this.btnChange.Location = new System.Drawing.Point(105, 279);
             this.btnChange.Margin = new System.Windows.Forms.Padding(4);
             this.btnChange.Name = "btnChange";
             this.btnChange.Size = new System.Drawing.Size(181, 46);
             this.btnChange.TabIndex = 5;
             this.btnChange.Text = "Đổi mật khẩu";
-            this.btnChange.UseVisualStyleBackColor = true;
+            this.btnChange.UseVisualStyleBackColor = false;
             this.btnChange.Click += new System.EventHandler(this.btnChange_Click);
             // 
             // txtPassOld
@@ -254,12 +259,23 @@ namespace HighLandCF_Management
             this.panel5.Size = new System.Drawing.Size(468, 354);
             this.panel5.TabIndex = 9;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(4, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(65, 49);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 11;
+            this.pictureBox1.TabStop = false;
+            // 
             // frm_LayLaiMatKhau
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(493, 424);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label23);
             this.Controls.Add(this.panel5);
             this.Name = "frm_LayLaiMatKhau";
@@ -274,6 +290,7 @@ namespace HighLandCF_Management
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -298,5 +315,6 @@ namespace HighLandCF_Management
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
